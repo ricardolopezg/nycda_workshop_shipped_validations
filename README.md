@@ -17,4 +17,4 @@ Once you have the basics setup, add some validations:
 * must have a unique name
 * cost must be above $1000 for each job
 * cargo description must be at least 50 characters
-* origin and destinations must be pulled from a valid list of locations (use a hard-coded list)
+* origin and destinations must be pulled from a valid list of locations (use a hard-coded list) (array?)
