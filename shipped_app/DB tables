@@ -1,0 +1,32 @@
+DB tables
+
+DEVISE - USERS
+has_one :profile
+
+email
+PW
+
+
+PROFILES
+has_many :boats
+belongs_to :user
+
+user_id:integer fname:string lname:string username:string
+
+
+
+BOATS
+has_many :jobs
+belongs_to :profile
+
+profile_id:integer boat_name:string container_capacity:integer location:string
+
+
+
+
+JOBS
+belongs_to :boat
+
+boat_id:integer containers_needed:integer cargo:string origin:string destination:string cost:decimal delivery_date:datetime
+
+
