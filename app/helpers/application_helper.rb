@@ -32,9 +32,10 @@ module ApplicationHelper
   
   def log_out_nav_link
     content_tag :a do
-      link_to "LOG OUT", destroy_user_session_path, method: :delete     
+      link_to "LOG OUT", destroy_user_session_path     
     end    
   end
+
 
 
 
