@@ -7,12 +7,12 @@ Create a Rails application for shippers to help them organize all of the ships i
 
 Once you have the basics setup, add some validations:
 
-**boats:
+**boats:**
 
 * must have a unique name
 * locations must be pulled from a valid list of locations (use a hard-coded list)
 
-**jobs:
+**jobs:**
 
 * must have a unique name
 * cost must be above $1000 for each job
