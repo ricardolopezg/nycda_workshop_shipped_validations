@@ -4,7 +4,7 @@ class BoatsController < ApplicationController
   end
 
   def show
-    @boats = User.find(current_user.id).boats
+    # @boats = User.find(current_user.id).boats
   end
   
   def new
@@ -17,16 +17,31 @@ class BoatsController < ApplicationController
     
     if @new_boat.save
       redirect_to profile_path(:id)
+    else
+      render :show
     end 
   end
 
   def edit
+    @boat = Boat.find(params[:id])
   end
   
   def update
+    @boat = Boat.find(params[:id])
+    @boat.update(boat_params)
+
+    if @boat.save
+      redirect_to profile_path(:id)
+    else
+      render :edit
+    end
   end
   
   def destroy
+    @boat = Boat.find(params[:id])
+    @boat.destroy
+
+    redirect_to profile_path([:id])
   end
 
 
