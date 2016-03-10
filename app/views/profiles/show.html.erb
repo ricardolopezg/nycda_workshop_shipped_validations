@@ -1,9 +1,15 @@
 <%= h1helper("#{@full_name}'s Boats and Jobs")%>
 
 
-
-<% form_for 
-
+<%= form_for @new_boat do |nb| %>
+  <%= nb.label :boat_name, "Boat Name" %>
+  <%= nb.text_area :boat_name %>
+  <%= nb.label :container_capacity, "Container Capacity" %>
+  <%= nb.text_area :container_capacity %>
+  <%= nb.label :location, "Location" %>
+  <%= nb.text_area :location %>
+  <%= nb.submit %>
+<% end %>
 
 
 

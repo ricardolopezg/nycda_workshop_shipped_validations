@@ -7,7 +7,7 @@ class ProfilesController < ApplicationController
     @profile = Profile.find(current_user.id)
     @full_name = (@profile.fname + " " + @profile.lname)
 
-    @new_boat = Boat.new() 
+    @new_boat = Boat.new
   end
   
   def new
@@ -22,10 +22,6 @@ class ProfilesController < ApplicationController
   def destroy
   end
 
-  private
-  def boat_params
-    params.require(:boat).permit(:boat_name:, :container_capacity, :location)
-  end
 
 
 end # end controller
