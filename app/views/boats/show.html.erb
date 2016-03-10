@@ -1,9 +1,0 @@
-<%= h1helper("My Boats")%>
-<% form_for @boats.each do |b| %>
-  <ul>
-    <li><%= b.boat_name %></li>
-    <li><%= b.profile_id %></li>
-    <li><%= b.container_capacity %></li>
-    <li><%= b.location %></li>
-  </ul>
-<% end %>
