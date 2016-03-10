@@ -1,0 +1,12 @@
+<%= h1helper("Edit My Profile") %>
+
+<!-- BRIDGET TO COMPLETE -->
+<%= form_for @user do |u| %>
+  <%= u.label :email, "Email" %>
+  <%= u.text_field :email %>
+  
+  <%= u.submit method: :update %>
+<% end %>
+
+
+

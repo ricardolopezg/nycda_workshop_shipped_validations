@@ -1,0 +1,84 @@
+<%= h1helper("My Boats and Jobs")%>
+
+
+<%= @profile.fname + " " + @profile.lname %><br>
+<%= current_user.email %><br>
+<%= link_to("Edit Profile", edit_profile_path(current_user.id), method: :get) %>&nbsp&nbsp&nbsp&nbsp<%= link_to("Delete Profile", 
+  profile_path(current_user.id), 
+  method: :delete, 
+  data: {confirm: "Are you sure you want to permanently delete your profile? This is irreversible!"}) %><br><br>
+
+
+
+
+
+
+
+
+
+
+
+<%= form_for @new_boat do |nb| %>
+  <%= nb.label :boat_name, "Boat Name" %>
+  <%= nb.text_field :boat_name %>
+  <%= nb.label :container_capacity, "Container Capacity" %>
+  <%= nb.number_field :container_capacity %>
+  <%= nb.label :location, "Location" %>
+  <%= nb.text_field :location %>
+  <%= nb.submit %>
+<% end %><br><br>
+
+
+
+
+
+
+
+
+<% @profile.boats.each do |b| %>
+<table style="width:70%; margin: 0 auto; text-align: center">
+  <tr>
+    <th style="border: 2px solid grey; background-color: lightblue"><%= h3helper("Boat Name") %></th>
+    <th style="border: 2px solid grey; background-color: lightblue"><%= h3helper("Container Capacity") %></th>
+    <th style="border: 2px solid grey; background-color: lightblue"><%= h3helper("Location") %></th>
+  </tr>
+  <tr>
+    <td><%= phelper(b.boat_name) %></td>
+    <td><%= phelper(b.container_capacity) %></td>
+    <td><%= phelper(b.location) %></td>
+    <td><%= link_to("Edit Boat", edit_boat_path(b.id), method: :get) %>&nbsp&nbsp&nbsp&nbsp<%= link_to("Delete Boat",
+        boat_path(b), 
+        method: :delete, 
+        data: {confirm: "Are you sure you want to remove \"#{b.boat_name}\" from your boats"}) %></td>
+  </tr>
+</table><br>
+<table style="width:70%; margin: 0 auto; text-align: center">  
+  <tr>
+    <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Job Title") %></th>
+    <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Containers Needed") %></th>
+    <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Cargo") %></th>
+    <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Origin") %></th>
+    <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Destination") %></th>
+    <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Delivery Date") %></th>
+    <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Cost") %></th>
+  </tr>
+  <% b.jobs.each do |j| %>
+  <tr>
+    <td><%= phelper(j.title) %></td>
+    <td><%= phelper(j.containers_needed) %></td>
+    <td><%= phelper(j.cargo) %></td>
+    <td><%= phelper(j.origin) %></td>
+    <td><%= phelper(j.destination) %></td>
+    <td><%= phelper(j.delivery_date.strftime("%m-%d-%Y")) %></td>
+    <td><%= number_to_currency(j.cost, precision: 0) %></td>
+    <td><%= link_to("Edit Job", edit_job_path(j.id), method: :get) %>&nbsp&nbsp&nbsp&nbsp<%= link_to("Delete Job", 
+        job_path(j), 
+        method: :delete, 
+        data: {confirm: "Are you sure you want to delete job - \"#{j.title}\"?"}) %></td>
+  </tr>
+  <% end %>  
+</table><br><br><br>
+<% end %> 
+
+
+
