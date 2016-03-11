@@ -1,26 +1,41 @@
-<%= h1helper("#{@full_name}'s Boats and Jobs")%>
+<%= h1helper("My Boats and Jobs")%>
+
+
+<%= @current_profile.fname + " " + @current_profile.lname %><br>
+<%= current_user.email %><br>
+<%= link_to("Edit Profile", edit_profile_path(current_user.id), method: :get) %>&nbsp&nbsp&nbsp&nbsp<%= link_to("Delete Profile", 
+  profile_path(current_user.id), 
+  method: :delete, 
+  data: {confirm: "Are you sure you want to permanently delete your profile? This is irreversible!"}) %><br><br>
+
+
+
+
+
+
+
+
+
 
 <%= link_to "Edit Profile", new_profile_path(@user) %>
 
 <%= form_for @new_boat do |nb| %>
   <%= nb.label :boat_name, "Boat Name" %>
-  <%= nb.text_area :boat_name %>
+  <%= nb.text_field :boat_name %>
   <%= nb.label :container_capacity, "Container Capacity" %>
-  <%= nb.text_area :container_capacity %>
+  <%= nb.number_field :container_capacity %>
   <%= nb.label :location, "Location" %>
-  <%= nb.text_area :location %>
+  <%= nb.text_field :location %>
   <%= nb.submit %>
-<% end %>
- 
+
+<% end %><br><br>
 
 
 
 
 
-
-
-<% @profile.boats.each do |b| %>
-<table style="width:65%; margin: 0 auto; text-align: center">
+<% @current_user.boats.each do |b| %>
+<table style="width:70%; margin: 0 auto; text-align: center">
   <tr>
     <th style="border: 2px solid grey; background-color: lightblue"><%= h3helper("Boat Name") %></th>
     <th style="border: 2px solid grey; background-color: lightblue"><%= h3helper("Container Capacity") %></th>
@@ -30,9 +45,13 @@
     <td><%= phelper(b.boat_name) %></td>
     <td><%= phelper(b.container_capacity) %></td>
     <td><%= phelper(b.location) %></td>
+    <td><%= link_to("Edit Boat", edit_boat_path(b.id), method: :get) %>&nbsp&nbsp&nbsp&nbsp<%= link_to("Delete Boat",
+        boat_path(b), 
+        method: :delete, 
+        data: {confirm: "Are you sure you want to remove \"#{b.boat_name}\" from your boats"}) %></td>
   </tr>
 </table><br>
-<table style="width:65%; margin: 0 auto; text-align: center">  
+<table style="width:70%; margin: 0 auto; text-align: center">  
   <tr>
     <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Job Title") %></th>
     <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Containers Needed") %></th>
@@ -51,6 +70,10 @@
     <td><%= phelper(j.destination) %></td>
     <td><%= phelper(j.delivery_date.strftime("%m-%d-%Y")) %></td>
     <td><%= number_to_currency(j.cost, precision: 0) %></td>
+    <td><%= link_to("Edit Job", edit_job_path(j.id), method: :get) %>&nbsp&nbsp&nbsp&nbsp<%= link_to("Delete Job", 
+        job_path(j), 
+        method: :delete, 
+        data: {confirm: "Are you sure you want to delete job - \"#{j.title}\"?"}) %></td>
   </tr>
   <% end %>  
 </table><br><br><br>

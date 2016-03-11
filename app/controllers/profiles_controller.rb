@@ -4,8 +4,9 @@ class ProfilesController < ApplicationController
   end
 
   def show
-    @profile = Profile.find(current_user.id)
-    @full_name = (@profile.fname + " " + @profile.lname)
+    @current_profile = Profile.find(current_user.id)
+    @current_user = User.find(current_user.id)
+    @full_name = (@current_profile.fname + " " + @current_profile.lname)
 
     @new_boat = Boat.new
   end
@@ -21,6 +22,7 @@ class ProfilesController < ApplicationController
   end
 
   def edit
+    @current_user = User.find(current_user.id)
   end
   
   def update

@@ -1,0 +1,30 @@
+<%= h1helper("Edit Job - \"#{ @job.title }\"") %>
+
+
+<%= form_for @job do |j| %>
+  <%= j.label :title, "Title" %>
+  <%= j.text_field :title %>
+  
+  <%= j.label :containers_needed, "Containers Needed" %>
+  <%= j.number_field :containers_needed %>
+  
+  <%= j.label :cargo, "Cargo" %>
+  <%= j.text_field :cargo %>
+  
+  <%= j.label :origin, "Origin" %>
+  <%= j.text_field :origin %>
+  
+  <%= j.label :destination, "Destination" %>
+  <%= j.text_field :destination %>
+
+  <%= j.label :cost, "Cost" %>
+  <%= j.number_field :cost %>  
+  
+  <%= j.label :delivery_date, "Delivery Date" %>
+  <%= j.date_field :delivery_date %>
+  
+  <%= j.submit method: :update %>
+<% end %>
+
+
+

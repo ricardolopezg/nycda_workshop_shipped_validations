@@ -1,0 +1,19 @@
+<%= h1helper("Edit Boat - \"#{ @boat.boat_name }\"") %>
+
+
+<%= form_for @boat do |b| %>
+  <%= b.label :boat_name, "Boat Name" %>
+  <%= b.text_field :boat_name %>
+  
+  <%= b.label :container_capacity, "Container Capacity" %>
+  <%= b.number_field :container_capacity %>
+  
+  <%= b.label :location, "Location" %>
+  <%= b.text_field :location %>
+  
+  
+  <%= b.submit method: :update %>
+<% end %>
+
+
+
