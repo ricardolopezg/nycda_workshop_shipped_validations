@@ -17,6 +17,7 @@
 
 
 
+<%= link_to "Edit Profile", new_profile_path(@user) %>
 
 <%= form_for @new_boat do |nb| %>
   <%= nb.label :boat_name, "Boat Name" %>
@@ -26,10 +27,8 @@
   <%= nb.label :location, "Location" %>
   <%= nb.text_field :location %>
   <%= nb.submit %>
+
 <% end %><br><br>
-
-
-
 
 
 
