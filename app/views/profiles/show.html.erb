@@ -1,7 +1,7 @@
 <%= h1helper("My Boats and Jobs")%>
 
 
-<%= @profile.fname + " " + @profile.lname %><br>
+<%= @current_profile.fname + " " + @current_profile.lname %><br>
 <%= current_user.email %><br>
 <%= link_to("Edit Profile", edit_profile_path(current_user.id), method: :get) %>&nbsp&nbsp&nbsp&nbsp<%= link_to("Delete Profile", 
   profile_path(current_user.id), 
@@ -35,7 +35,7 @@
 
 
 
-<% @profile.boats.each do |b| %>
+<% @current_user.boats.each do |b| %>
 <table style="width:70%; margin: 0 auto; text-align: center">
   <tr>
     <th style="border: 2px solid grey; background-color: lightblue"><%= h3helper("Boat Name") %></th>

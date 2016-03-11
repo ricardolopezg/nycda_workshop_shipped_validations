@@ -1,0 +1,53 @@
+<%= h1helper("All Jobs")%>
+
+<%= form_for @new_job do |nj| %>
+
+  <%= nj.label :title, "Job Title" %>
+  <%= nj.text_field :title %>
+  
+  <%= nj.label :containers_needed, "Containers Needed" %>
+  <%= nj.number_field :containers_needed %>
+  
+  <%= nj.label :cargo, "Cargo" %>
+  <%= nj.text_field :cargo %>
+  
+  <%= nj.label :origin, "Origin" %>
+  <%= nj.text_field :origin %>
+  
+  <%= nj.label :destination, "Destination" %>
+  <%= nj.text_field :destination %>
+  
+  <%= nj.label :cost, "Cost" %>
+  <%= nj.number_field :cost %>
+  
+  <%= nj.label :delivery_date, "Delivery Date" %>
+  <%= nj.date_field :delivery_date %>
+  <%= nj.submit :create%>
+<% end %><br><br>
+
+
+<table style="width:70%; margin: 0 auto; text-align: center">
+  <tr>
+    <th style="border: 2px solid grey; background-color: lightblue"><%= h3helper("Boat Name") %></th>
+    <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Job Title") %></th>
+    <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Containers Needed") %></th>
+    <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Cargo") %></th>
+    <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Origin") %></th>
+    <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Destination") %></th>
+    <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Delivery Date") %></th>
+    <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Cost") %></th>
+  </tr>
+<% @jobs.each do |j| %>
+  <tr>
+    <td><%= phelper(j.title) %></td>
+    <td><%= phelper(j.containers_needed) %></td>
+    <td><%= phelper(j.cargo) %></td>
+    <td><%= phelper(j.origin) %></td>
+    <td><%= phelper(j.destination) %></td>
+    <td><%= phelper(j.delivery_date.strftime("%m-%d-%Y")) %></td>
+    <td><%= number_to_currency(j.cost, precision: 0) %></td>
+  </tr>
+<% end %> 
+</table><br><br><br>
+
+

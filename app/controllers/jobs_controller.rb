@@ -1,16 +1,26 @@
 class JobsController < ApplicationController
 
   def index
+    @jobs = Job.all
+    @new_job = Job.new
   end
 
   def show
    
-  end
+  end 
   
   def new
+    @jobs = Job.all
+    @new_job = Job.new
   end
 
   def create
+    @new_job = Job.new(job_params)
+    
+    if @new_job.save
+      # redirect_to profile_path(:id)
+      render :index
+    end
   end
   
   def edit
