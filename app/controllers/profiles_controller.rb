@@ -12,8 +12,15 @@ class ProfilesController < ApplicationController
   end
   
   def new
+    @user = current_user.id
+    @profile.id = Profile.create
   end
   
+  def create
+    @profile.id = current_user.id
+    @profile = Profile.find(current_user.id)
+  end
+
   def edit
     @current_user = User.find(current_user.id)
   end
