@@ -1,5 +1,6 @@
 <%= h1helper("#{@full_name}'s Boats and Jobs")%>
 
+<%= link_to "Edit Profile", new_profile_path(@user) %>
 
 <%= form_for @new_boat do |nb| %>
   <%= nb.label :boat_name, "Boat Name" %>
@@ -10,7 +11,7 @@
   <%= nb.text_area :location %>
   <%= nb.submit %>
 <% end %>
-
+ 
 
 
 
