@@ -8,13 +8,13 @@
 
 ####################CREATE USER DATA##################3
 user_list = [
-  ["Ricky@boats.com", 1, "12341234", "12341234"],
-  ["Bridget@boats.com", 2, "password", "password"],
-  ["Captain@boats.com", 3, "ahoy", "ahoy"],
+  [1, "Ricky@boats.com", "12341234", "12341234"],
+  [2, "Bridget@boats.com", "password", "password"],
+  [3, "Captain@boats.com", "ahoyahoy", "ahoyahoy"],
 ]
 
-user_list.each do |email, id, password, password_confirmation|
-  User.create!(email: email, id: id, password: password, password_confirmation: password_confirmation)
+user_list.each do |id, email, password, password_confirmation|
+  User.create!(id: id, email: email, password: password, password_confirmation: password_confirmation)
 end
 
 ####################CREATE PROFILE DATA##################

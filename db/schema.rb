@@ -11,9 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 20160311232159) do
-
+ActiveRecord::Schema.define(version: 20160311220900) do
 
   create_table "boats", force: :cascade do |t|
     t.integer  "user_id"

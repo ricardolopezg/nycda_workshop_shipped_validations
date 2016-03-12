@@ -28370,3 +28370,255 @@ ActionView::Template::Error (undefined method `each' for nil:NilClass):
   [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.4ms)[0m  DELETE FROM "jobs" WHERE "jobs"."id" = ?  [["id", 32]]
   [1m[36m (11.1ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeColumnName (20160311232159)
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for ::1 at 2016-03-11 18:55:01 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (4.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 1095ms (Views: 1093.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-11 18:55:03 -0500
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for ::1 at 2016-03-11 18:55:03 -0500
+
+
+Started GET "/assets/jobs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-11 18:55:03 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-11 18:55:03 -0500
+
+
+Started GET "/assets/profiles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-11 18:55:03 -0500
+
+
+Started GET "/assets/boats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-11 18:55:03 -0500
+
+
+Started GET "/assets/boats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-11 18:55:03 -0500
+
+
+Started GET "/assets/jobs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-11 18:55:03 -0500
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-11 18:55:03 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-11 18:55:03 -0500
+
+
+Started GET "/profiles/1" for ::1 at 2016-03-11 18:55:07 -0500
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mProfile Load (0.0ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBoat Load (0.0ms)[0m  SELECT "boats".* FROM "boats" WHERE "boats"."user_id" = ?  [["user_id", 1]]
+  [1m[36mJob Load (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."boat_id" = ?[0m  [["boat_id", 1]]
+  [1m[35mJob Load (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."boat_id" = ?  [["boat_id", 2]]
+  Rendered profiles/show.html.erb within layouts/application (119.7ms)
+Completed 200 OK in 250ms (Views: 210.6ms | ActiveRecord: 2.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ricky@boats.com' LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("email", "id", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "ricky@boats.com"], ["id", 1], ["encrypted_password", "$2a$10$nIAzeo3wPfmrrXCsiiMMYOiGn0w2v3jXollZQbrUBCsF0Aj7tZrkS"], ["created_at", "2016-03-11 23:58:43.486881"], ["updated_at", "2016-03-11 23:58:43.486881"]]
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ricky@boats.com' LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "users" ("email", "id", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "ricky@boats.com"], ["id", 1], ["encrypted_password", "$2a$10$zlPUm4WUL4nLqdkLmeHFVOzrIE5BaNPTFwR.Bcl3B7q0DAn8Ghq92"], ["created_at", "2016-03-12 00:01:18.954305"], ["updated_at", "2016-03-12 00:01:18.954305"]]
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ricky@boats.com' LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "users" ("id", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["id", 1], ["email", "ricky@boats.com"], ["encrypted_password", "$2a$10$D0ZqT9JaIzdxHzsVizjsH.TTbzTOXYwSIcmF1Ir6CjGhB89T2oH7O"], ["created_at", "2016-03-12 00:02:14.893163"], ["updated_at", "2016-03-12 00:02:14.893163"]]
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mUser Load (4.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mProfile Load (0.0ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "profiles" WHERE "profiles"."id" = ?[0m  [["id", 1]]
+  [1m[35mBoat Load (0.0ms)[0m  SELECT "boats".* FROM "boats" WHERE "boats"."user_id" = ?  [["user_id", 1]]
+  [1m[36mJob Load (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."boat_id" = ?[0m  [["boat_id", 1]]
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "jobs" WHERE "jobs"."id" = ?  [["id", 1]]
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "jobs" WHERE "jobs"."id" = ?[0m  [["id", 2]]
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "boats" WHERE "boats"."id" = ?  [["id", 1]]
+  [1m[36mJob Load (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."boat_id" = ?[0m  [["boat_id", 2]]
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "jobs" WHERE "jobs"."id" = ?  [["id", 3]]
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "boats" WHERE "boats"."id" = ?[0m  [["id", 2]]
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 1]]
+  [1m[36m (24.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mProfile Load (0.0ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1[0m  [["user_id", 2]]
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "profiles" WHERE "profiles"."id" = ?  [["id", 2]]
+  [1m[36mBoat Load (1.0ms)[0m  [1mSELECT "boats".* FROM "boats" WHERE "boats"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mJob Load (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."boat_id" = ?  [["boat_id", 3]]
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "jobs" WHERE "jobs"."id" = ?[0m  [["id", 4]]
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "boats" WHERE "boats"."id" = ?  [["id", 3]]
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (9.0ms)[0m  commit transaction
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mBoat Load (0.0ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ricky@boats.com' LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "users" ("id", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["id", 1], ["email", "ricky@boats.com"], ["encrypted_password", "$2a$10$XSpevOeKbIhxdoIcV4oon.6pFqE2xE8aZZF.6k4/1n3Xur2FNA8bK"], ["created_at", "2016-03-12 00:10:42.318611"], ["updated_at", "2016-03-12 00:10:42.318611"]]
+  [1m[36m (10.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'bridget@boats.com' LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("id", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["id", 2], ["email", "bridget@boats.com"], ["encrypted_password", "$2a$10$IBGsw5siL5NXoiBMZd3yYeEp5H0JJnIz4KIjPYg6SEoyASYLVIvLy"], ["created_at", "2016-03-12 00:10:42.420829"], ["updated_at", "2016-03-12 00:10:42.420829"]]
+  [1m[36m (24.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'captain@boats.com' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ricky@boats.com' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mUser Load (6.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mProfile Load (0.0ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36mBoat Load (0.0ms)[0m  [1mSELECT "boats".* FROM "boats" WHERE "boats"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 1]]
+  [1m[36m (20.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mProfile Load (0.0ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1[0m  [["user_id", 2]]
+  [1m[35mBoat Load (1.0ms)[0m  SELECT "boats".* FROM "boats" WHERE "boats"."user_id" = ?  [["user_id", 2]]
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (22.5ms)[0m  commit transaction
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ricky@boats.com' LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "users" ("id", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["id", 1], ["email", "ricky@boats.com"], ["encrypted_password", "$2a$10$7dt2BEIjzZjKTFNVE9s5eu4.yCpTkwJBvwgTVuA1RY9zfyV6vhXhm"], ["created_at", "2016-03-12 00:13:02.488908"], ["updated_at", "2016-03-12 00:13:02.488908"]]
+  [1m[36m (11.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'bridget@boats.com' LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "users" ("id", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["id", 2], ["email", "bridget@boats.com"], ["encrypted_password", "$2a$10$EvTcBhMsiAQzFoRV0bH.t.toUqjVVQ/5.FYikq/sOvhqD6Rf4nXAa"], ["created_at", "2016-03-12 00:13:02.590889"], ["updated_at", "2016-03-12 00:13:02.590889"]]
+  [1m[36m (16.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'captain@boats.com' LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("id", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["id", 3], ["email", "captain@boats.com"], ["encrypted_password", "$2a$10$jsw3uMbAIPZ.hdp.RvFGxufP3TrRyWqAZZD/yK.M1.I8I9sLiJfxa"], ["created_at", "2016-03-12 00:13:02.699003"], ["updated_at", "2016-03-12 00:13:02.699003"]]
+  [1m[36m (19.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "profiles" ("id", "user_id", "fname", "lname", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["id", 1], ["user_id", 1], ["fname", "Ricardo"], ["lname", "Lopez-Guerrero"], ["username", "RickyLopezG"], ["created_at", "2016-03-12 00:13:02.727005"], ["updated_at", "2016-03-12 00:13:02.727005"]]
+  [1m[35m (15.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "profiles" ("id", "user_id", "fname", "lname", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 2], ["user_id", 2], ["fname", "Bridget"], ["lname", "McMillan"], ["username", "bmcspillin"], ["created_at", "2016-03-12 00:13:02.745041"], ["updated_at", "2016-03-12 00:13:02.745041"]]
+  [1m[36m (17.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "profiles" ("id", "user_id", "fname", "lname", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["id", 3], ["user_id", 3], ["fname", "Captain"], ["lname", "Crunch"], ["username", "CatchyHook"], ["created_at", "2016-03-12 00:13:02.764099"], ["updated_at", "2016-03-12 00:13:02.764099"]]
+  [1m[35m (16.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "boats" ("id", "user_id", "boat_name", "container_capacity", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["boat_name", "Fiesta Bomba"], ["container_capacity", 50], ["location", "Ibiza"], ["created_at", "2016-03-12 00:13:02.796249"], ["updated_at", "2016-03-12 00:13:02.796249"]]
+  [1m[36m (29.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "boats" ("id", "user_id", "boat_name", "container_capacity", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["id", 2], ["user_id", 1], ["boat_name", "SI Fairy"], ["container_capacity", 125], ["location", "Monaco"], ["created_at", "2016-03-12 00:13:02.830375"], ["updated_at", "2016-03-12 00:13:02.830375"]]
+  [1m[35m (9.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "boats" ("id", "user_id", "boat_name", "container_capacity", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 3], ["user_id", 2], ["boat_name", "La Sirena"], ["container_capacity", 100], ["location", "Alexandria"], ["created_at", "2016-03-12 00:13:02.843834"], ["updated_at", "2016-03-12 00:13:02.843834"]]
+  [1m[36m (16.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "boats" ("id", "user_id", "boat_name", "container_capacity", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["id", 4], ["user_id", 2], ["boat_name", "La Petite Mort"], ["container_capacity", 40], ["location", "Marseille"], ["created_at", "2016-03-12 00:13:02.866397"], ["updated_at", "2016-03-12 00:13:02.866397"]]
+  [1m[35m (20.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "boats" ("id", "user_id", "boat_name", "container_capacity", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 5], ["user_id", 2], ["boat_name", "La Gringa"], ["container_capacity", 90], ["location", "Barcelona"], ["created_at", "2016-03-12 00:13:02.893306"], ["updated_at", "2016-03-12 00:13:02.893306"]]
+  [1m[36m (22.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "boats" ("id", "user_id", "boat_name", "container_capacity", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["id", 6], ["user_id", 2], ["boat_name", "Hillary"], ["container_capacity", 80], ["location", "Benghazi"], ["created_at", "2016-03-12 00:13:02.921727"], ["updated_at", "2016-03-12 00:13:02.921727"]]
+  [1m[35m (9.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "boats" ("id", "user_id", "boat_name", "container_capacity", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["id", 7], ["user_id", 3], ["boat_name", "NomNom"], ["container_capacity", 75], ["location", "Ciutadella"], ["created_at", "2016-03-12 00:13:02.934736"], ["updated_at", "2016-03-12 00:13:02.934736"]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "jobs" ("id", "boat_id", "containers_needed", "cargo", "origin", "destination", "cost", "delivery_date", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 1], ["boat_id", 3], ["containers_needed", 70], ["cargo", "Dance the hempen jig fluke hearties Pieces of Eight scallywag port swing the lead gibbet yawl sheet. Sutler killick bilge rat hands gabion grog blossom tack gaff brigantine scuttle. Fire ship cackle fruit hornswaggle wench splice the main brace parrel lateen sail blow the man down log fluke."], ["origin", "Algiers"], ["destination", "Valencia"], ["cost", 20000.0], ["delivery_date", "2017-03-15 00:00:00.000000"], ["title", "Swab the deck"], ["created_at", "2016-03-12 00:13:02.969783"], ["updated_at", "2016-03-12 00:13:02.969783"]]
+  [1m[35m (8.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "jobs" ("id", "boat_id", "containers_needed", "cargo", "origin", "destination", "cost", "delivery_date", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["id", 2], ["boat_id", 1], ["containers_needed", 50], ["cargo", "Sleep nap rub face on owner yet find empty spot in cupboard and sleep all day or attack feet, or why must they do that. Lick yarn hanging out of own butt chase dog then run away yet stare at ceiling light and asdflkjaertvlkjasntvkjn (sits on keyboard) brown cats with pink ears thinking longingly about tuna brine or human is washing you why halp oh the horror flee scratch hiss bite."], ["origin", "Trieste"], ["destination", "Hvar"], ["cost", 18500.0], ["delivery_date", "2016-12-20 00:00:00.000000"], ["title", "Kittens"], ["created_at", "2016-03-12 00:13:02.984646"], ["updated_at", "2016-03-12 00:13:02.984646"]]
+  [1m[36m (16.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "jobs" ("id", "boat_id", "containers_needed", "cargo", "origin", "destination", "cost", "delivery_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 3], ["boat_id", 2], ["containers_needed", 120], ["cargo", "Redeye acerbic grounds mug fair trade decaffeinated eu plunger pot. Iced foam turkish, doppio bar skinny qui coffee trifecta ut cortado cappuccino. Est seasonal cortado crema grounds brewed mug whipped aged. Instant, flavour est milk doppio pumpkin spice arabica."], ["origin", "Monaco"], ["destination", "Taranto"], ["cost", 60000.0], ["delivery_date", "2017-04-01 00:00:00.000000"], ["created_at", "2016-03-12 00:13:03.007242"], ["updated_at", "2016-03-12 00:13:03.007242"]]
+  [1m[35m (9.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "jobs" ("id", "boat_id", "containers_needed", "cargo", "origin", "destination", "cost", "delivery_date", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["id", 4], ["boat_id", 4], ["containers_needed", 25], ["cargo", "For the same reason you should believe a hundred dollar bill is no more than a hundred pennies! The worst that could happen is that I could spill coffee all over this $3,000 suit. COME ON. Ann, you need to decide whether you want a man or a boy. I know how I'd answer. I need a tea to give my dingle less tingle. But anyhoo, can you believe that the only reason the club is going under is because it's in a terrifying neighborhood? Second-of-ly, I know you're the big marriage expert. Oh I'm sorry, I forgot, your wife is dead. A night of heterosexual intercourse."], ["origin", "Cannes"], ["destination", "Rijeka"], ["cost", 20000.0], ["delivery_date", "2016-10-12 00:00:00.000000"], ["title", "Bananas"], ["created_at", "2016-03-12 00:13:03.023232"], ["updated_at", "2016-03-12 00:13:03.023232"]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "jobs" ("id", "boat_id", "containers_needed", "cargo", "origin", "destination", "cost", "delivery_date", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 5], ["boat_id", 5], ["containers_needed", 75], ["cargo", "Port-salut queso boursin. Cheeseburger airedale fromage frais goat queso melted cheese when the cheese comes out everybody's happy pecorino. Everyone loves blue castello stinking bishop caerphilly goat goat airedale cheeseburger. Who moved my cheese cheese and wine pecorino port-salut queso edam swiss."], ["origin", "Nice"], ["destination", "Haifa"], ["cost", 80000.0], ["delivery_date", "2016-02-01 00:00:00.000000"], ["title", "Cheese"], ["created_at", "2016-03-12 00:13:03.038247"], ["updated_at", "2016-03-12 00:13:03.038247"]]
+  [1m[35m (37.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "jobs" ("id", "boat_id", "containers_needed", "cargo", "origin", "destination", "cost", "delivery_date", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["id", 6], ["boat_id", 4], ["containers_needed", 15], ["cargo", "I didn't know our county was bi. Good for us. Detention is no big deal. Don't have a crap attack. Sometimes with Jimmy Jr, I don't know what to say. But now I don't know what not to say and it's like okay guys, who can get to my mouth first? Is it possible to be in love with 25 people at once? I'm not spooked. What's the next thing after spooked? I'm that. She grabbed Jimmy Jr's butt and changed the world."], ["origin", "Marseille"], ["destination", "Tel-Aviv"], ["cost", 30000.0], ["delivery_date", "2017-03-15 00:00:00.000000"], ["title", "Burgers"], ["created_at", "2016-03-12 00:13:03.079274"], ["updated_at", "2016-03-12 00:13:03.079274"]]
+  [1m[36m (7.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "jobs" ("id", "boat_id", "containers_needed", "cargo", "origin", "destination", "cost", "delivery_date", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 7], ["boat_id", 6], ["containers_needed", 75], ["cargo", "Cupcake ipsum dolor sit amet chocolate pie cupcake. Chupa chups apple pie ice cream chocolate bar. Cake pastry liquorice chocolate bar caramels wafer jujubes wafer."], ["origin", "Toulon"], ["destination", "Piraeus"], ["cost", 45000.0], ["delivery_date", "2017-03-15 00:00:00.000000"], ["title", "Cupcakes"], ["created_at", "2016-03-12 00:13:03.091064"], ["updated_at", "2016-03-12 00:13:03.091064"]]
+  [1m[35m (8.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "jobs" ("id", "boat_id", "containers_needed", "cargo", "origin", "destination", "cost", "delivery_date", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["id", 8], ["boat_id", 3], ["containers_needed", 85], ["cargo", " Shoulder brisket tri-tip kevin, strip steak jowl ground round pork loin porchetta sausage andouille leberkas picanha. Chuck capicola sausage ham hock, alcatra tongue turducken filet mignon pig pork loin jowl cow hamburger picanha salami."], ["origin", "Valencia"], ["destination", "Bari"], ["cost", 75000.0], ["delivery_date", "2016-08-10 00:00:00.000000"], ["title", "Bacon"], ["created_at", "2016-03-12 00:13:03.102246"], ["updated_at", "2016-03-12 00:13:03.102246"]]
+  [1m[36m (15.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "jobs" ("id", "boat_id", "containers_needed", "cargo", "origin", "destination", "cost", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 9], ["boat_id", 6], ["containers_needed", 60], ["cargo", "Tousled meggings flannel, normcore kale chips seitan venmo lomo selfies drinking vinegar. Selfies green juice franzen, beard letterpress truffaut drinking vinegar gochujang. Try-hard salvia lomo, disrupt meditation hella PBR&B ethical tofu seitan biodiesel. Brooklyn mixtape neutra, freegan twee salvia etsy distillery shoreditch polaroid organic. "], ["origin", "Zadar"], ["destination", "Budva"], ["cost", 75000.0], ["title", "Hipsters"], ["created_at", "2016-03-12 00:13:03.121586"], ["updated_at", "2016-03-12 00:13:03.121586"]]
+  [1m[35m (14.0ms)[0m  commit transaction
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mBoat Load (0.0ms)[0m  SELECT "boats".* FROM "boats"
+  [1m[36mJob Load (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
