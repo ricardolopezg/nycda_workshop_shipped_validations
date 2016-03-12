@@ -6,15 +6,21 @@ module ApplicationHelper
     end    
   end
 
-  def jobs_nav_link
+  def claimed_jobs_nav_link
     content_tag :a do
-      link_to "ALL JOBS", jobs_path      
+      link_to "CLAIMED JOBS", claimed_jobs_path     
+    end    
+  end  
+
+  def find_jobs_nav_link
+    content_tag :a do
+      link_to "FIND JOBS", find_jobs_path    
     end    
   end  
 
   def boats_nav_link
     content_tag :a do
-      link_to "BOATS", boats_path     
+      link_to "All BOATS", boats_path     
     end    
   end
 

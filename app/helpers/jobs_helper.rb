@@ -1,16 +1,7 @@
 module JobsHelper
 
-  def h1helper(title)
-    content_tag :h1, title 
-  end
-  def h2helper(title)
-    content_tag :h2, title 
-  end
-  def h3helper(title)
-    content_tag :h3, title 
-  end
-  def phelper(body)
-    content_tag :p, body 
+  def h2helper_find_job(title)
+    content_tag :h2, title, class: "jhelper" 
   end
 
 
