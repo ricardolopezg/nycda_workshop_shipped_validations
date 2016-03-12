@@ -1,13 +1,22 @@
 class JobsController < ApplicationController
 
   def index
-    @jobs = Job.all
-    @new_job = Job.new
+    redirect_to find_jobs_path
   end
 
-  def show
-   
-  end 
+
+  def claimed_jobs
+    @jobs = Job.all
+  end
+
+  def find_jobs
+    @jobs = Job.all
+    @new_job = Job.new
+
+    @boat = Boat.all
+    @new_boat = Boat.new
+    @random_num = rand(7000..9999)
+  end
   
   def new
     @jobs = Job.all
@@ -18,8 +27,7 @@ class JobsController < ApplicationController
     @new_job = Job.new(job_params)
     
     if @new_job.save
-      # redirect_to profile_path(:id)
-      render :index
+      redirect_to find_jobs_path
     end
   end
   

@@ -1,3 +1,52 @@
 // Place all the styles related to the Jobs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.table_claimed_jobs {
+  width: 70%; 
+  margin: 0 auto; 
+  text-align: center;
+}
+
+.table_find_jobs {
+  width: 60%; 
+  position: absolute;
+  left: 450px;
+  top: 250px;
+  text-align: center;
+}
+
+.jhelper {
+  width: 60%; 
+  position: absolute;
+  left: 450px;
+  top: 186px;
+  text-align: center;
+}
+
+.new_job_form {
+  width: 30%; 
+  // margin: 0 auto;
+  position: absolute;
+  left: 30px; 
+  text-align: center;
+}
+
+.new_job_form_field {
+  width: 300px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.table_header_boats {
+  border: 2px solid grey; 
+  background-color: lightblue; 
+  color: #000;
+}
+
+
+.table_header_jobs {
+  border: 2px solid grey; 
+  background-color: lightgreen; 
+  color: #000;
+}

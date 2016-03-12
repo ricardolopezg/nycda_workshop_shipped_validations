@@ -1,0 +1,48 @@
+<%= h1helper("Available Jobs")%>
+
+<%= form_for @new_job, html: {class: "new_job_form"} do |nj| %>
+  <%= h2helper("CREATE A JOB") %>
+      
+    
+
+  <%= nj.text_field :title, placeholder: "Job Title", class: "new_job_form_field" %><br><br>
+  <%= nj.text_field :cargo, placeholder: "Cargo", class: "new_job_form_field" %><br><br>
+  <%= nj.text_field :origin, placeholder: "Origin", class: "new_job_form_field" %><br><br>
+  <%= nj.text_field :destination, placeholder: "Destination", class: "new_job_form_field" %><br><br>
+  <%= nj.number_field :containers_needed, placeholder: "Containers Needed", class: "new_job_form_field" %><br><br>
+  <%= nj.number_field :cost, placeholder: "Cost", class: "new_job_form_field" %><br><br>
+  <%= nj.date_field :delivery_date, placeholder: "Delivery Date", class: "new_job_form_field" %><br><br>  
+  <%= nj.submit :create%>
+<% end %><br><br>
+
+
+
+
+<table class = "table_find_jobs">
+  <%= h2helper_find_job("FIND A JOB") %>
+  <tr>
+    <th class = "table_header_jobs"><%= h3helper("Job Title") %></th>
+    <th class = "table_header_jobs"><%= h3helper("Cargo") %></th>
+    <th class = "table_header_jobs"><%= h3helper("Containers Needed") %></th>
+    <th class = "table_header_jobs"><%= h3helper("Origin") %></th>
+    <th class = "table_header_jobs"><%= h3helper("Destination") %></th>
+    <th class = "table_header_jobs"><%= h3helper("Cost") %></th>
+    <th class = "table_header_jobs"><%= h3helper("Delivery Date") %></th>
+    <th class = "table_header_jobs"><%= h3helper("Job Created") %></th>
+    <th class = "table_header_jobs"><%= h3helper("Claim Job") %></th>
+  </tr>
+<% @jobs.reverse_each do |j| %>
+  <tr>
+    <td><%= phelper(j.title) %></td>
+    <td><%= phelper(j.cargo) %></td>
+    <td><%= phelper(j.containers_needed) %></td>
+    <td><%= phelper(j.origin) %></td>
+    <td><%= phelper(j.destination) %></td>
+    <td><%= number_to_currency(j.cost, precision: 0) %></td>
+    <td><%= phelper(j.delivery_date.strftime("%m-%d-%Y")) %></td>
+    <td><%= phelper(j.created_at.getlocal.strftime("%m-%d-%Y")) %></td>
+  </tr>
+<% end %> 
+</table><br><br><br>
+
+
