@@ -20,7 +20,7 @@ module ApplicationHelper
 
   def sign_up_nav_link
     content_tag :a do
-      link_to "SIGN UP", new_user_registration_path      
+      link_to "SIGN UP", new_user_registration_path
     end    
   end  
 

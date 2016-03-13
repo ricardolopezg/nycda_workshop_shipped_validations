@@ -1,6 +1,4 @@
-INDEX PAGE
-
-<h2>Please create a profile in order to continue</h2>
+<%= h1helper("Edit My Profile") %>
 
 <%= form_for @current_profile do |profile| %>
   <%= profile.label :fname, "First Name" %>
@@ -9,5 +7,8 @@ INDEX PAGE
   <%= profile.text_field :lname %>
   <%= profile.label :username, "Username" %>
   <%= profile.text_field :username %>
-  <%= profile.submit method: :post %>
+  <%= profile.submit method: :update %>
 <% end %>
+
+
+
