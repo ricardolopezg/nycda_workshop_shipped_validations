@@ -1,13 +1,13 @@
 class ProfilesController < ApplicationController
 
   def index
-    @user = current_user.id
-    @current_profile = @current_user
+    @user = current_user
+    # @user = User.
+    # @current_user = User.find(params(:id))
   end
 
   def show
     @current_profile = Profile.find(current_user.id)
-    Profile.id = User.id
     @current_user = User.find(current_user.id)
     @full_name = (@current_profile.fname + " " + @current_profile.lname)
 
@@ -16,7 +16,7 @@ class ProfilesController < ApplicationController
   
   def new
     @user = current_user.id
-    @profile.id = Profile.create
+    @profile = Profile.create
   end
   
   def create
@@ -37,4 +37,4 @@ class ProfilesController < ApplicationController
 
 
 
-end # end controller
+end
