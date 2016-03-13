@@ -5,7 +5,8 @@
   <%= @current_profile.username %><br>
   <%= @current_profile.fname + " " + @current_profile.lname %><br>
   <%= current_user.email %><br>
-  <%= link_to("Edit Profile", edit_profile_path(current_user.id), method: :get) %>&nbsp&nbsp&nbsp&nbsp<%= link_to("Delete Profile", 
+  <%= link_to("Edit Profile", edit_profile_path(current_user.id), method: :get) %>
+  <%= link_to("Delete Profile", 
     profile_path(current_user.id), 
     method: :delete, 
     data: {confirm: "Are you sure you want to permanently delete your profile? This is irreversible!"}) %><br><br>

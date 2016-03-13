@@ -34504,3 +34504,1289 @@ AbstractController::Helpers::MissingHelperError (Missing helper file helpers/c:/
   Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
   Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1566.1ms)
 >>>>>>> master
+
+
+Started GET "/index" for ::1 at 2016-03-13 10:42:17 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.2) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (36.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (20.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1017.7ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (664.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1497.1ms)
+
+
+Started GET "/" for ::1 at 2016-03-13 10:42:32 -0400
+
+AbstractController::Helpers::MissingHelperError (Missing helper file helpers/c:/users/bridget/documents/nycda/repos/nycda_workshop_shipped_validations/app/helpers/application_helper.rb_helper.rb):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/profiles_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (725.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (686.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1633.1ms)
+
+
+Started GET "/sign-in" for ::1 at 2016-03-13 10:51:58 -0400
+
+ActionController::RoutingError (No route matches [GET] "/sign-in"):
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.2) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (989.7ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (688.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1606.1ms)
+
+
+Started GET "/users/sign-in" for ::1 at 2016-03-13 10:52:54 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users/sign-in"):
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.2) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (950.7ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (790.6ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1767.2ms)
+
+
+Started GET "/" for ::1 at 2016-03-13 10:53:41 -0400
+
+AbstractController::Helpers::MissingHelperError (Missing helper file helpers/c:/users/bridget/documents/nycda/repos/nycda_workshop_shipped_validations/app/helpers/application_helper.rb_helper.rb):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/profiles_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (680.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (662.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1542.1ms)
+
+
+Started GET "/" for ::1 at 2016-03-13 10:53:44 -0400
+
+AbstractController::Helpers::MissingHelperError (Missing helper file helpers/c:/users/bridget/documents/nycda/repos/nycda_workshop_shipped_validations/app/helpers/application_helper.rb_helper.rb):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/profiles_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (694.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (651.4ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1603.1ms)
+
+
+Started GET "/" for ::1 at 2016-03-13 10:54:10 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+AbstractController::Helpers::MissingHelperError (Missing helper file helpers/c:/users/bridget/documents/nycda/repos/nycda_workshop_shipped_validations/app/helpers/application_helper.rb_helper.rb):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/profiles_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (14.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (765.6ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (656.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1517.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (1.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for ::1 at 2016-03-13 11:08:46 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProfilesController#index as HTML
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `id' for nil:NilClass):
+  app/controllers/profiles_controller.rb:4:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (697.8ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (660.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1512.1ms)
+
+
+Started GET "/" for ::1 at 2016-03-13 11:12:03 -0400
+
+SyntaxError (C:/Users/Bridget/Documents/NYCDA/Repos/nycda_workshop_shipped_validations/app/controllers/profiles_controller.rb:4: syntax error, unexpected '(', expecting keyword_end
+    @user = @profile(:user_id)
+                     ^):
+  app/controllers/profiles_controller.rb:4: syntax error, unexpected '(', expecting keyword_end
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (713.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (658.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1514.1ms)
+
+
+Started GET "/" for ::1 at 2016-03-13 11:12:32 -0400
+Processing by ProfilesController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `user_id' for nil:NilClass):
+  app/controllers/profiles_controller.rb:4:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (730.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (639.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1482.1ms)
+
+
+Started GET "/" for ::1 at 2016-03-13 11:16:18 -0400
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (18.0ms)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    2: 
+    3: <h2>Please create a profile in order to continue</h2>
+    4: 
+    5: <%= form_for @current_profile do |profile| %>
+    6:   <%= profile.label :fname, "First Name" %>
+    7:   <%= profile.text_field :fname %>
+    8:   <%= profile.label :lname, "Last Name" %>
+  app/views/profiles/index.html.erb:5:in `_app_views_profiles_index_html_erb___759851245_39251484'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (749.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (708.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1642.2ms)
+
+
+Started GET "/" for ::1 at 2016-03-13 11:18:12 -0400
+Processing by ProfilesController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `id' for nil:NilClass):
+  app/controllers/profiles_controller.rb:5:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (756.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (693.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1586.1ms)
+
+
+Started GET "/" for ::1 at 2016-03-13 11:18:35 -0400
+Processing by ProfilesController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/profiles_controller.rb:5:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (811.6ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (708.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1661.2ms)
+
+
+Started GET "/" for ::1 at 2016-03-13 11:24:07 -0400
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (19.0ms)
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    2: 
+    3: <h2>Please create a profile in order to continue</h2>
+    4: 
+    5: <%= form_for @current_profile do |profile| %>
+    6:   <%= profile.label :fname, "First Name" %>
+    7:   <%= profile.text_field :fname %>
+    8:   <%= profile.label :lname, "Last Name" %>
+  app/views/profiles/index.html.erb:5:in `_app_views_profiles_index_html_erb___759851245_39251484'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (750.6ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (720.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1707.2ms)
+
+
+Started GET "/" for ::1 at 2016-03-13 11:25:02 -0400
+Processing by ProfilesController#index as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `user' for #<ProfilesController:0x5cf07c0>):
+  app/controllers/profiles_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (798.6ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (702.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1591.1ms)
+
+
+Started GET "/" for ::1 at 2016-03-13 11:25:22 -0400
+Processing by ProfilesController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `profile' for nil:NilClass):
+  app/controllers/profiles_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (788.6ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (684.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1576.1ms)
+
+
+Started GET "/" for ::1 at 2016-03-13 11:25:50 -0400
+Processing by ProfilesController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `profile' for nil:NilClass):
+  app/controllers/profiles_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (756.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (675.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1533.1ms)
+
+
+Started GET "/" for ::1 at 2016-03-13 11:26:15 -0400
+
+SyntaxError (C:/Users/Bridget/Documents/NYCDA/Repos/nycda_workshop_shipped_validations/app/controllers/profiles_controller.rb:7: syntax error, unexpected '(', expecting keyword_end
+    @profile = @user(params[:profile])
+                     ^
+C:/Users/Bridget/Documents/NYCDA/Repos/nycda_workshop_shipped_validations/app/controllers/profiles_controller.rb:7: syntax error, unexpected ')', expecting keyword_end
+    @profile = @user(params[:profile])
+                                      ^
+C:/Users/Bridget/Documents/NYCDA/Repos/nycda_workshop_shipped_validations/app/controllers/profiles_controller.rb:42: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/profiles_controller.rb:7: syntax error, unexpected '(', expecting keyword_end
+  app/controllers/profiles_controller.rb:7: syntax error, unexpected ')', expecting keyword_end
+  app/controllers/profiles_controller.rb:42: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (707.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (660.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1507.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-13 11:26:42 -0400
+
+SyntaxError (C:/Users/Bridget/Documents/NYCDA/Repos/nycda_workshop_shipped_validations/app/controllers/profiles_controller.rb:7: syntax error, unexpected '(', expecting keyword_end
+    @profile = @user(params[:profile])
+                     ^
+C:/Users/Bridget/Documents/NYCDA/Repos/nycda_workshop_shipped_validations/app/controllers/profiles_controller.rb:7: syntax error, unexpected ')', expecting keyword_end
+    @profile = @user(params[:profile])
+                                      ^
+C:/Users/Bridget/Documents/NYCDA/Repos/nycda_workshop_shipped_validations/app/controllers/profiles_controller.rb:42: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/profiles_controller.rb:7: syntax error, unexpected '(', expecting keyword_end
+  app/controllers/profiles_controller.rb:7: syntax error, unexpected ')', expecting keyword_end
+  app/controllers/profiles_controller.rb:42: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (731.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (657.4ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1542.1ms)
+
+
+Started GET "/" for ::1 at 2016-03-13 11:29:16 -0400
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (17.0ms)
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    2: 
+    3: <h2>Please create a profile in order to continue</h2>
+    4: 
+    5: <%= form_for @current_profile do |profile| %>
+    6:   <%= profile.label :fname, "First Name" %>
+    7:   <%= profile.text_field :fname %>
+    8:   <%= profile.label :lname, "Last Name" %>
+  app/views/profiles/index.html.erb:5:in `_app_views_profiles_index_html_erb___759851245_39251484'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (739.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (673.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1534.1ms)
+
+
+Started GET "/" for ::1 at 2016-03-13 11:29:53 -0400
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (18.0ms)
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    2: 
+    3: <h2>Please create a profile in order to continue</h2>
+    4: 
+    5: <%= form_for @profile do |profile| %>
+    6:   <%= profile.label :fname, "First Name" %>
+    7:   <%= profile.text_field :fname %>
+    8:   <%= profile.label :lname, "Last Name" %>
+  app/views/profiles/index.html.erb:5:in `_app_views_profiles_index_html_erb___759851245_49281036'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (691.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (731.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1584.1ms)
+
+
+Started GET "/" for ::1 at 2016-03-13 11:30:59 -0400
+Processing by ProfilesController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `params' for nil:NilClass):
+  app/controllers/profiles_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (770.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (675.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1593.1ms)
+
+
+Started GET "/" for ::1 at 2016-03-13 11:33:31 -0400
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (19.0ms)
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    2: 
+    3: <h2>Please create a profile in order to continue</h2>
+    4: 
+    5: <%= form_for @current_profile do |profile| %>
+    6:   <%= profile.label :fname, "First Name" %>
+    7:   <%= profile.text_field :fname %>
+    8:   <%= profile.label :lname, "Last Name" %>
+  app/views/profiles/index.html.erb:5:in `_app_views_profiles_index_html_erb___759851245_66519336'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (756.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (695.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1573.1ms)
+
+
+Started GET "/" for ::1 at 2016-03-13 11:41:10 -0400
+Processing by ProfilesController#index as HTML
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 753ms (Views: 751.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/boats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-13 11:41:12 -0400
+
+
+Started GET "/assets/jobs.self-25227b43673c2f3071d277b14ff99e7518c2aa17c0c635b2636757b63906ee51.css?body=1" for ::1 at 2016-03-13 11:41:12 -0400
+
+
+Started GET "/assets/profiles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-13 11:41:12 -0400
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for ::1 at 2016-03-13 11:41:12 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-13 11:41:12 -0400
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-13 11:41:12 -0400
+
+
+Started GET "/assets/boats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-13 11:41:12 -0400
+
+
+Started GET "/assets/jobs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-13 11:41:12 -0400
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-13 11:41:12 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-13 11:41:12 -0400
+
+
+Started GET "/users/sign_in" for ::1 at 2016-03-13 11:41:16 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (9.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (97.1ms)
+Completed 200 OK in 291ms (Views: 270.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-03-13 11:41:25 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lGSqZC+spcS0NrFxjIBKPDDTkzW1o2b1OR2xZEyvZDdLKo83H5kf7WRz38Lea+CccJvHJMCY30JzSezbSJ2dWA==", "user"=>{"email"=>"Captain@boats.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "captain@boats.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["current_sign_in_at", "2016-03-13 15:41:26.160208"], ["sign_in_count", 2], ["updated_at", "2016-03-13 15:41:26.163193"], ["id", 3]]
+  [1m[36m (15.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 479ms (ActiveRecord: 17.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-13 11:41:26 -0400
+Processing by ProfilesController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered profiles/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 131ms (Views: 126.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profiles/3" for ::1 at 2016-03-13 11:41:28 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mProfile Load (0.0ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1  [["id", 3]]
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 1.0ms)
+
+NoMethodError (undefined method `id' for #<Class:0x7339230>):
+  app/controllers/profiles_controller.rb:11:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (770.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (770.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1704.2ms)
+
+
+Started GET "/boats" for ::1 at 2016-03-13 11:41:36 -0400
+Processing by BoatsController#index as HTML
+  Rendered boats/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 109ms (Views: 109.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/find_jobs" for ::1 at 2016-03-13 11:41:41 -0400
+Processing by JobsController#find_jobs as HTML
+  [1m[35mJob Load (0.0ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered jobs/find_jobs.erb within layouts/application (80.1ms)
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    39:     <td><%= phelper(j.origin) %></td>
+    40:     <td><%= phelper(j.destination) %></td>
+    41:     <td><%= number_to_currency(j.cost, precision: 0) %></td>
+    42:     <td><%= phelper(j.delivery_date.strftime("%m-%d-%Y")) %></td>
+    43:     <td><%= phelper(j.created_at.getlocal.strftime("%m-%d-%Y")) %></td>
+    44:   </tr>
+    45: <% end %> 
+  app/views/jobs/find_jobs.erb:42:in `block in _app_views_jobs_find_jobs_erb___865123035_39149844'
+  app/views/jobs/find_jobs.erb:34:in `_app_views_jobs_find_jobs_erb___865123035_39149844'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (794.6ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (728.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1661.2ms)
+
+
+Started GET "/claimed_jobs" for ::1 at 2016-03-13 11:41:51 -0400
+Processing by JobsController#claimed_jobs as HTML
+  [1m[36mJob Load (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  [1m[35mBoat Load (1.0ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoat Load (0.0ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBoat Load (0.0ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mBoat Load (0.0ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mBoat Load (1.0ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mBoat Load (0.0ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (1.0ms)[0m  SELECT  "boats".* FROM "boats" WHERE "boats"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered jobs/claimed_jobs.html.erb within layouts/application (58.0ms)
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 3.0ms)
+
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    24:     <td><%= phelper(j.cargo) %></td>
+    25:     <td><%= phelper(j.origin) %></td>
+    26:     <td><%= phelper(j.destination) %></td>
+    27:     <td><%= phelper(j.delivery_date.strftime("%m-%d-%Y")) %></td>
+    28:     <td><%= number_to_currency(j.cost, precision: 0) %></td>
+    29:   </tr>
+    30:   <% end %>
+  app/views/jobs/claimed_jobs.html.erb:27:in `block in _app_views_jobs_claimed_jobs_html_erb___1021689407_72763776'
+  app/views/jobs/claimed_jobs.html.erb:18:in `_app_views_jobs_claimed_jobs_html_erb___1021689407_72763776'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (779.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (732.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1677.2ms)
+
+
+Started GET "/profiles/3" for ::1 at 2016-03-13 11:42:08 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mProfile Load (0.0ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1  [["id", 3]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.0ms)
+
+NoMethodError (undefined method `id' for #<Class:0x7339230>):
+  app/controllers/profiles_controller.rb:11:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (795.6ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (713.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1668.3ms)
+
+
+Started GET "/profiles/3" for ::1 at 2016-03-13 11:43:08 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mProfile Load (0.0ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 4.0ms)
+
+NoMethodError (undefined method `id=' for #<Class:0xb727d38>):
+  app/controllers/profiles_controller.rb:11:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (765.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (738.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1679.2ms)
+
+
+Started GET "/profiles/3" for ::1 at 2016-03-13 11:43:47 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mProfile Load (0.0ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.0ms)
+
+NoMethodError (undefined method `id' for #<Class:0xb6a01e0>):
+  app/controllers/profiles_controller.rb:11:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (796.6ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (721.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1663.2ms)
+
+
+Started GET "/profiles/3" for ::1 at 2016-03-13 11:45:37 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mProfile Load (1.0ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoat Load (1.0ms)[0m  [1mSELECT "boats".* FROM "boats" WHERE "boats"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mJob Load (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."boat_id" = ?  [["boat_id", 7]]
+  Rendered profiles/show.html.erb within layouts/application (82.2ms)
+Completed 200 OK in 229ms (Views: 191.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/boats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-13 11:45:38 -0400
+
+
+Started GET "/assets/jobs.self-25227b43673c2f3071d277b14ff99e7518c2aa17c0c635b2636757b63906ee51.css?body=1" for ::1 at 2016-03-13 11:45:38 -0400
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for ::1 at 2016-03-13 11:45:38 -0400
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-13 11:45:38 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-13 11:45:38 -0400
+
+
+Started GET "/assets/profiles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-13 11:45:38 -0400
+
+
+Started GET "/assets/boats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-13 11:45:38 -0400
+
+
+Started GET "/assets/jobs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-13 11:45:38 -0400
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-13 11:45:38 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-13 11:45:38 -0400
+
+
+Started GET "/profiles/3/edit" for ::1 at 2016-03-13 11:46:08 -0400
+Processing by ProfilesController#edit as HTML
+  Parameters: {"authenticity_token"=>"ARJNfatVgp6Jdxmb62iqW6Qgx9zXPCCMvArLUvOUA+/qnA+1qgha2BcfUD5p4DV4M/7n4Z7YhxbQ9lwETZ9e+A==", "id"=>"3"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mProfile Load (0.0ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 1.0ms)
+
+ActionView::MissingTemplate (Missing template profiles/edit, application/edit with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/Bridget/Documents/NYCDA/Repos/nycda_workshop_shipped_validations/app/views"
+  * "C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views"
+):
+  actionview (4.2.5.2) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.5.2) lib/action_view/lookup_context.rb:121:in `find'
+  C:in `find_template'
+  actionview (4.2.5.2) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.5.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.5.2) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.5.2) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.5.2) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5.2) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5.2) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5.2) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5.2) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5.2) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5.2) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.5.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5.2) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5.2) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5.2) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.5.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.5.2) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5.2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5.2) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5.2) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5.2) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5.2) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5.2) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5.2) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5.2) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5.2) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5.2) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5.2) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5.2) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.2) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.2) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.2) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.2) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.2) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.2) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.2) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.2) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (740.6ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (716.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1659.2ms)
+
+
+Started GET "/profiles/3" for ::1 at 2016-03-13 11:47:08 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mProfile Load (0.0ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoat Load (0.0ms)[0m  [1mSELECT "boats".* FROM "boats" WHERE "boats"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mJob Load (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."boat_id" = ?  [["boat_id", 7]]
+  Rendered profiles/show.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 143ms (Views: 125.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/boats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-13 11:47:09 -0400
+
+
+Started GET "/assets/jobs.self-25227b43673c2f3071d277b14ff99e7518c2aa17c0c635b2636757b63906ee51.css?body=1" for ::1 at 2016-03-13 11:47:09 -0400
+
+
+Started GET "/assets/profiles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-13 11:47:09 -0400
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-13 11:47:09 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-13 11:47:09 -0400
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for ::1 at 2016-03-13 11:47:09 -0400
+
+
+Started GET "/assets/boats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-13 11:47:09 -0400
+
+
+Started GET "/assets/jobs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-13 11:47:09 -0400
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-13 11:47:09 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-13 11:47:09 -0400
+
+
+Started GET "/profiles/3" for ::1 at 2016-03-13 11:49:55 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mProfile Load (0.0ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBoat Load (0.0ms)[0m  SELECT "boats".* FROM "boats" WHERE "boats"."user_id" = ?  [["user_id", 3]]
+  [1m[36mJob Load (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."boat_id" = ?[0m  [["boat_id", 7]]
+  Rendered profiles/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 141ms (Views: 132.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/boats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-13 11:49:56 -0400
+
+
+Started GET "/assets/jobs.self-25227b43673c2f3071d277b14ff99e7518c2aa17c0c635b2636757b63906ee51.css?body=1" for ::1 at 2016-03-13 11:49:56 -0400
+
+
+Started GET "/assets/profiles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-13 11:49:56 -0400
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for ::1 at 2016-03-13 11:49:56 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-13 11:49:56 -0400
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-13 11:49:56 -0400
+
+
+Started GET "/assets/boats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-13 11:49:56 -0400
+
+
+Started GET "/assets/jobs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-13 11:49:56 -0400
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-13 11:49:56 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-13 11:49:56 -0400
+
+
+Started GET "/profiles/3/edit" for ::1 at 2016-03-13 11:50:00 -0400
+Processing by ProfilesController#edit as HTML
+  Parameters: {"authenticity_token"=>"AEMzlEKzcoLQsZhE4/FkWZFnTiwCsuRCJ4OOK8f8BODrzXFcQ+6qxE7Z0eFheft6BrluEUtWQ9hLfxl9efdZ9w==", "id"=>"3"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mProfile Load (1.0ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered profiles/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 125ms (Views: 117.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/profiles/3" for ::1 at 2016-03-13 11:50:09 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mProfile Load (0.0ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBoat Load (0.0ms)[0m  SELECT "boats".* FROM "boats" WHERE "boats"."user_id" = ?  [["user_id", 3]]
+  [1m[36mJob Load (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."boat_id" = ?[0m  [["boat_id", 7]]
+  Rendered profiles/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 128ms (Views: 123.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profiles/3/edit" for ::1 at 2016-03-13 11:50:13 -0400
+Processing by ProfilesController#edit as HTML
+  Parameters: {"authenticity_token"=>"WoKKzYz+1//J4qVgkb6NKokmC6zaYHS/R1FMPBpoU8mxDMgFjaMPuVeK7MUTNhIJHvgrkZOE0yUrrdtqpGMO3g==", "id"=>"3"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mProfile Load (0.0ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered profiles/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 119ms (Views: 111.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/profiles/3" for ::1 at 2016-03-13 11:50:16 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mProfile Load (1.0ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBoat Load (0.0ms)[0m  SELECT "boats".* FROM "boats" WHERE "boats"."user_id" = ?  [["user_id", 3]]
+  [1m[36mJob Load (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."boat_id" = ?[0m  [["boat_id", 7]]
+  Rendered profiles/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 120ms (Views: 114.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/profiles/3/edit" for ::1 at 2016-03-13 11:50:24 -0400
+Processing by ProfilesController#edit as HTML
+  Parameters: {"authenticity_token"=>"JG7dh6CC/ExMFNMidYkDNBLKdkeecz8QhcL90eY5OOvP4J9Pod8kCtJ8mof3AZwXhRRWeteXmIrpPmqHWDJl/A==", "id"=>"3"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mProfile Load (1.0ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered profiles/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 115ms (Views: 106.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/profiles/3" for ::1 at 2016-03-13 11:50:55 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mProfile Load (0.0ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBoat Load (0.0ms)[0m  SELECT "boats".* FROM "boats" WHERE "boats"."user_id" = ?  [["user_id", 3]]
+  [1m[36mJob Load (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."boat_id" = ?[0m  [["boat_id", 7]]
+  Rendered profiles/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 138ms (Views: 129.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profiles/3" for ::1 at 2016-03-13 11:50:55 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mProfile Load (0.0ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mBoat Load (1.0ms)[0m  [1mSELECT "boats".* FROM "boats" WHERE "boats"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mJob Load (0.0ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."boat_id" = ?  [["boat_id", 7]]
+  Rendered profiles/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 118ms (Views: 110.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/profiles/3" for ::1 at 2016-03-13 11:57:23 -0400
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mProfile Load (1.0ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mBoat Load (0.0ms)[0m  SELECT "boats".* FROM "boats" WHERE "boats"."user_id" = ?  [["user_id", 3]]
+  [1m[36mJob Load (0.0ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."boat_id" = ?[0m  [["boat_id", 7]]
+  Rendered profiles/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 132ms (Views: 124.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/find_jobs" for ::1 at 2016-03-13 11:57:29 -0400
+Processing by JobsController#find_jobs as HTML
+  [1m[35mJob Load (0.0ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered jobs/find_jobs.erb within layouts/application (23.0ms)
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    39:     <td><%= phelper(j.origin) %></td>
+    40:     <td><%= phelper(j.destination) %></td>
+    41:     <td><%= number_to_currency(j.cost, precision: 0) %></td>
+    42:     <td><%= phelper(j.delivery_date.strftime("%m-%d-%Y")) %></td>
+    43:     <td><%= phelper(j.created_at.getlocal.strftime("%m-%d-%Y")) %></td>
+    44:   </tr>
+    45: <% end %> 
+  app/views/jobs/find_jobs.erb:42:in `block in _app_views_jobs_find_jobs_erb___865123035_39149844'
+  app/views/jobs/find_jobs.erb:34:in `_app_views_jobs_find_jobs_erb___865123035_39149844'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (716.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (660.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1508.1ms)
