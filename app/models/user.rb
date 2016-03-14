@@ -4,10 +4,18 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  # callback function: after user created, create profile with user_id of newly created user
-
-  # seed file for profile should become update rather than create
-
+  has_one :user_profile
   has_one :profile, dependent: :destroy
   has_many :boats, dependent: :destroy
+
+  # callback function: after user created, create profile with user_id of newly created user
+  accepts_nested_attributes_for :profile
+
+  before_create :build_default_profile
+
+  def build_default_profile
+    self.build_profile
+    true
+  end
+
 end

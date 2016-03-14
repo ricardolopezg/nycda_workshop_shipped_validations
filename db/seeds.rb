@@ -6,10 +6,10 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Users.destroy_all
-Profiles.destroy_all
-Boats.destroy_all
-Jobs.destroy_all
+User.destroy_all
+Profile.destroy_all
+Boat.destroy_all
+Job.destroy_all
 
 ####################CREATE USER DATA##################
 user_list = [
@@ -19,12 +19,12 @@ user_list = [
 ]
 
 user_list.each do |email, password, password_confirmation|
-  User.create!(email: email, password: password, password_confirmation: password_confirmation)
+  User.create(email: email, password: password, password_confirmation: password_confirmation)
 end
 
 ####################CREATE PROFILE DATA##################
 
-user_id = User.find(:id).first
+user_id = User.first.id
 
 profile_list = [
   [user_id, "Ricardo", "Lopez-Guerrero", "RickyLopezG"],
@@ -32,13 +32,11 @@ profile_list = [
   [user_id + 2, "Captain", "Crunch", "CatchyHook"],
 ]
 
-profile_list.each do |user_id, fname, lname, username|
-  Profile.where(:user_id)
-  Profile.update!(fname: fname, lname: lname, username: username)
+profile_list.each do |fname, lname, username|
+  Profile.where(:user_id).update(fname: fname, lname: lname, username: username)
 end
 
 ####################CREATE BOAT DATA##################
-boat_id = Boat.find(:id).first
 
 boat_list = [
   [user_id, "Fiesta Bomba", 50, "Ibiza"],
@@ -52,12 +50,11 @@ boat_list = [
 
 boat_list.each do |user_id, boat_name, container_capacity, location|
   Boat.where(:user_id)
-  Boat.update!(boat_name: boat_name, container_capacity: container_capacity, location: location)
+  Boat.update(boat_name: boat_name, container_capacity: container_capacity, location: location)
 end
 
 ####################CREATE JOB DATA##################
-
-boat_id = Boat(:id).first
+boat_id = Boat.first.id
 
 job_list = [
   [boat_id + 2, 70, "Dance the hempen jig fluke hearties Pieces of Eight scallywag port swing the lead gibbet yawl sheet. Sutler killick bilge rat hands gabion grog blossom tack gaff brigantine scuttle. Fire ship cackle fruit hornswaggle wench splice the main brace parrel lateen sail blow the man down log fluke.", "Algiers", "Valencia", 20000.00, "2017-03-15 [00:00:00]", "Swab the deck"],
