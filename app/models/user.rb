@@ -7,6 +7,9 @@ class User < ActiveRecord::Base
   has_one :user_profile
   has_one :profile, dependent: :destroy
   has_many :boats, dependent: :destroy
+  has_many :boats, through: :followers
+
+
 
   # callback function: after user created, create profile with user_id of newly created user
   accepts_nested_attributes_for :profile
