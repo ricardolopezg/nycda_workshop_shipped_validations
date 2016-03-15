@@ -1,0 +1,40 @@
+<%= h1helper("#{@boat.boat_name}") %>
+
+<div class = "boat_profile">
+  <%= image_tag @boat.avatar.url(:medium) %>
+  <%= phelper("Container Capacity: #{@boat.container_capacity}") %>
+  <%= phelper("Location: #{@boat.location}") %>
+</div>
+
+
+<% @boat_jobs.each do |bj| %>
+<table class = "table_one_boat_job_title">  
+    <td><%= h2helper(bj.title) %></td>
+</table>
+
+<table class = "table_one_boat_job_info">  
+  <tr>
+    <th><%= h3helper("Containers Needed:") %></th>
+    <td><%= phelper(bj.containers_needed) %></td>
+    <th><%= h3helper("Origin:") %></th>
+    <td><%= phelper(bj.origin) %></td>
+    <th><%= h3helper("Desination:") %></th>
+    <td><%= phelper(bj.destination) %></td>
+  </tr>
+  <tr>
+    <th><%= h3helper("Delivery Date:") %></th>
+    <td><%= phelper(bj.delivery_date.strftime("%m-%d-%Y")) %></td>
+    <th><%= h3helper("Cost:") %></th>
+    <td><%= number_to_currency(bj.cost, precision: 0) %></td>
+  </tr>
+</table>
+
+<table class = "table_one_boat_job_cargo">
+  <tr>
+    <th><%= h3helper("Cargo") %></th>
+  </tr>
+  <tr>
+    <td><%= phelper(bj.cargo) %></td>
+  </tr>
+</table>
+<% end %> 

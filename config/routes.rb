@@ -7,6 +7,9 @@ Rails.application.routes.draw do
 
   get "/claimed_jobs" => "jobs#claimed_jobs"
   get "/find_jobs" => "jobs#find_jobs"
+  put "/assign_boat_name/:id" => "jobs#assign_boat_name"
+
+  post "/profiles/new" => "profiles#new"
 
   
   # The priority is based upon order of creation: first created -> highest priority.

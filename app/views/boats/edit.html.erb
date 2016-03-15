@@ -1,7 +1,7 @@
 <%= h1helper("Edit Boat - \"#{ @boat.boat_name }\"") %>
 
 
-<%= form_for @boat do |b| %>
+<%= form_for @boat, html: { multipart: true } do |b| %>
   <%= b.label :boat_name, "Boat Name" %>
   <%= b.text_field :boat_name %>
   
@@ -11,6 +11,8 @@
   <%= b.label :location, "Location" %>
   <%= b.text_field :location %>
   
+  <%= b.label :avatar, "Boat Image" %>
+  <%= b.file_field :avatar %>
   
   <%= b.submit method: :update %>
 <% end %>

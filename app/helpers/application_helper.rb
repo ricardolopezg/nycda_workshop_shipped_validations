@@ -52,10 +52,13 @@ module ApplicationHelper
   def h3helper(title)
     content_tag :h3, title 
   end
+  def h4helper(title)
+    content_tag :h4, title 
+  end
   def phelper(body)
     content_tag :p, body 
   end
-
+ 
 
 
 

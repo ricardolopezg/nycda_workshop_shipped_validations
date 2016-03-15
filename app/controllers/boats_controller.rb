@@ -1,10 +1,12 @@
 class BoatsController < ApplicationController
 
   def index
+    @boats = Boat.all
   end
 
   def show
-    # @boats = User.find(current_user.id).boats
+    @boat = Boat.find(params[:id])
+    @boat_jobs = @boat.jobs
   end
   
   def new
@@ -12,13 +14,14 @@ class BoatsController < ApplicationController
   end
   
   def create
+    @current_profile = Profile.find(current_user.id)
     @new_boat = Boat.new(boat_params)
     @new_boat.user_id = current_user.id
     
     if @new_boat.save
       redirect_to profile_path(:id)
     else
-      render :show
+      render "profiles/show.html.erb"
     end 
   end
 
@@ -47,7 +50,7 @@ class BoatsController < ApplicationController
 
   private
   def boat_params
-    params.require(:boat).permit(:user_id, :boat_name, :container_capacity, :location)
+    params.require(:boat).permit(:user_id, :boat_name, :container_capacity, :location, :avatar)
   end
 
 

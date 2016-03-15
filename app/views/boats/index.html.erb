@@ -1,0 +1,20 @@
+<%= h1helper("All Boats") %>
+
+<table style="width:70%; margin: 0 auto; text-align: center">
+  <tr>
+    
+  </tr>
+  <tr>
+<% @boats.each do |b| %> 
+    <td><%= link_to("View Jobs", boat_path(b.id), method: :get) %><br><br><%= button_tag "Follow", follow_path(user_id: @user.id),
+method: :post, remote: true %></td>
+    <td><%= image_tag b.avatar.url(:medium) %></td>
+    <th><%= h3helper("Boat:") %></th>
+    <td><%= phelper(b.boat_name) %></td>
+    <th><%= h3helper("Container Capacity:") %></th>
+    <td><%= phelper(b.container_capacity) %></td>
+    <th><%= h3helper("Location:") %></th>
+    <td><%= phelper(b.location) %></td>
+  </tr>
+<% end %>
+</table><br>

@@ -11,7 +11,7 @@
 .table_find_jobs {
   width: 60%; 
   position: absolute;
-  left: 450px;
+  left: 400px;
   top: 250px;
   text-align: center;
 }
@@ -25,7 +25,7 @@
 }
 
 .new_job_form {
-  width: 30%; 
+  width: 20%; 
   // margin: 0 auto;
   position: absolute;
   left: 30px; 
@@ -49,4 +49,16 @@
   border: 2px solid grey; 
   background-color: lightgreen; 
   color: #000;
+}
+
+.boats_display {
+  border: 2px solid grey; 
+  background-color: lightblue; 
+  color: #000
+}
+
+.job_display {
+  border: 2px solid grey; 
+  background-color: lightgreen; 
+  color: #000
 }
