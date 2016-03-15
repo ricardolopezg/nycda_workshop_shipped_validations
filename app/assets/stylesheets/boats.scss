@@ -1,3 +1,33 @@
 // Place all the styles related to the Boats controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.boat_profile {
+  margin-left: 50px;
+  margin-right: 50px;
+  float: left;
+  width:22%;
+  height: 1000px;
+  text-align: center;
+}
+
+.table_one_boat_job_info, .table_one_boat_job_title {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 35%;
+  float: left;
+}
+
+.table_one_boat_job_title {
+  text-align: center;
+  text-transform: uppercase;
+  color: blue;
+}
+
+
+.table_one_boat_job_cargo {
+  width: 28%;
+  float: left;
+  margin-top: -78px;
+}

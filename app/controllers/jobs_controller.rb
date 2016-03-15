@@ -10,12 +10,18 @@ class JobsController < ApplicationController
   end
 
   def find_jobs
+    @current_profile = Profile.find(current_user.id)
+
     @jobs = Job.all
     @new_job = Job.new
 
     @boat = Boat.all
     @new_boat = Boat.new
-    @random_num = rand(7000..9999)
+    @boats = Boat.where(user_id: @current_profile.id)
+  end
+
+  def show
+    
   end
   
   def new
@@ -24,10 +30,14 @@ class JobsController < ApplicationController
   end
 
   def create
+    @jobs = Job.all
     @new_job = Job.new(job_params)
     
     if @new_job.save
       redirect_to find_jobs_path
+      # render :find_jobs
+    else
+      render :find_jobs
     end
   end
   
@@ -45,6 +55,23 @@ class JobsController < ApplicationController
       render :edit
     end
   end
+
+
+  def assign_boat_name
+    @job = Job.find(params[:id])
+    @job.update(job_params)
+
+
+    if @job.save
+      redirect_to profile_path(current_user.id)
+    else
+      redirect_to find_jobs_path
+    end
+
+  end
+
+
+
   
   def destroy
     @job = Job.find(params[:id])

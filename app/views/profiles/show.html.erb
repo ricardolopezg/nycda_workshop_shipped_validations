@@ -10,38 +10,44 @@
 
 
 
+<!-- VALIDATION OF UNIQUE BOAT NAME -->
+<% if @new_boat.errors.any? %>
+  <ul>
+    <% @new_boat.errors.values.each do |error_message| %>
+      <li style = "list-style: none"><%= error_message * " " %></li> <br>
+    <% end %>
+  </ul>
+<% end %>
 
 
 
-
-
-
-
-<%= link_to "Edit Profile", new_profile_path(@user) %>
-
-<%= form_for @new_boat do |nb| %>
+<!-- CREATE NEW BOAT -->
+<%= form_for @new_boat, html: { multipart: true }  do |nb| %>
   <%= nb.label :boat_name, "Boat Name" %>
   <%= nb.text_field :boat_name %>
   <%= nb.label :container_capacity, "Container Capacity" %>
   <%= nb.number_field :container_capacity %>
   <%= nb.label :location, "Location" %>
   <%= nb.text_field :location %>
+  <%= nb.label :avatar, "Boat Image" %>
+  <%= nb.file_field :avatar %>
   <%= nb.submit %>
-
 <% end %><br><br>
 
 
 
 
-
+<!-- DISPLAY BOATS AND ASSOCIATED JOBS  -->
 <% @current_user.boats.each do |b| %>
 <table style="width:70%; margin: 0 auto; text-align: center">
   <tr>
-    <th style="border: 2px solid grey; background-color: lightblue"><%= h3helper("Boat Name") %></th>
-    <th style="border: 2px solid grey; background-color: lightblue"><%= h3helper("Container Capacity") %></th>
-    <th style="border: 2px solid grey; background-color: lightblue"><%= h3helper("Location") %></th>
+    <th class = "boats_display"><%= h3helper("Boat Image") %></th>
+    <th class = "boats_display"><%= h3helper("Boat Name") %></th>
+    <th class = "boats_display"><%= h3helper("Container Capacity") %></th>
+    <th class = "boats_display"><%= h3helper("Location") %></th>
   </tr>
   <tr>
+    <td><%= image_tag b.avatar.url(:medium) %></td>
     <td><%= phelper(b.boat_name) %></td>
     <td><%= phelper(b.container_capacity) %></td>
     <td><%= phelper(b.location) %></td>
@@ -53,13 +59,13 @@
 </table><br>
 <table style="width:70%; margin: 0 auto; text-align: center">  
   <tr>
-    <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Job Title") %></th>
-    <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Containers Needed") %></th>
-    <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Cargo") %></th>
-    <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Origin") %></th>
-    <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Destination") %></th>
-    <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Delivery Date") %></th>
-    <th style="border: 2px solid grey; background-color: lightgreen; color: #000"><%= h3helper("Cost") %></th>
+    <th class = "job_display"><%= h3helper("Job Title") %></th>
+    <th class = "job_display"><%= h3helper("Containers Needed") %></th>
+    <th class = "job_display"><%= h3helper("Cargo") %></th>
+    <th class = "job_display"><%= h3helper("Origin") %></th>
+    <th class = "job_display"><%= h3helper("Destination") %></th>
+    <th class = "job_display"><%= h3helper("Delivery Date") %></th>
+    <th class = "job_display"><%= h3helper("Cost") %></th>
   </tr>
   <% b.jobs.each do |j| %>
   <tr>
