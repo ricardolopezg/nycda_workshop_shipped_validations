@@ -1,15 +1,12 @@
 class ProfilesController < ApplicationController
-  def index
 
-    # Profile.new(params[:user_id])
-    # @current_profile = Profile.find(current_user.id)
-    # @current_user = User.find(current_user.id)
+  def index
 
   end
 
   def show
-
-    # @current_profile = Profile.find(current_user.id)
+    # @profile = Profile.current_user
+    @current_profile = Profile.find(current_user.id)
     @current_user = User.find(current_user.id)
     @full_name = (@current_profile.fname + " " + @current_profile.lname)
 
@@ -17,25 +14,29 @@ class ProfilesController < ApplicationController
   end
   
   def new
-    # @current_profile = Profile.find_by(user_id).last
-    # @current_user = User.find(current_user.id)
+    
   end
   
   def create
-    @profile = Profile.create(params[:profile])
+   @profile = Profile.create(params[:id])
     if @profile.save
-      redirect_to profile_path(@profile.id)
+      redirect_to edit_profile_path(@profile)
     else
-      render profile_new
+      redirect_to new_user_registration_path
     end
   end
 
   def edit
-    @current_profile = Profile.find(current_user.id)
-    @current_user = User.find(current_user.id)
+    @profile = Profile.find(params[:id])
   end
   
   def update
+  @profile = Profile.update(profile_params)
+    if @profile.save
+      redirect_to profile_path(:id)
+    else
+      render :edit
+    end
   end
   
   def destroy
@@ -43,9 +44,9 @@ class ProfilesController < ApplicationController
 
   private
 
-  def profile_params
-    params.require(:profile).permit(:fname, :lname, :username)
-  end
-
+    def profile_params
+      params.require(:profile).permit(:fname, :lname, :username)
+    end
 
 end
+

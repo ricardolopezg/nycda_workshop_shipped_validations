@@ -1,13 +1,13 @@
 <h2>Please create a profile in order to continue</h2>
 
-<%= form_for :profile do |profile| %>
+<%= form_for(:profile, url: profiles_path) do |profile| %>
   <%= profile.label :fname, "First Name" %>
   <%= profile.text_field :fname %>
   <%= profile.label :lname, "Last Name" %>
   <%= profile.text_field :lname %>
   <%= profile.label :username, "Username" %>
   <%= profile.text_field :username %>
-  <%= profile.submit method: :post %>
+  <%= profile.submit method: :put %>
 <% end %>
 
 

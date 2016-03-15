@@ -11,7 +11,9 @@ class User < ActiveRecord::Base
   # callback function: after user created, create profile with user_id of newly created user
   accepts_nested_attributes_for :profile
 
-  before_create :build_default_profile
+  # before_create
+  after_create :build_default_profile
+
 
   def build_default_profile
     self.build_profile
