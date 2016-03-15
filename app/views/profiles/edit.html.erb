@@ -1,12 +1,11 @@
 <%= h1helper("Edit My Profile") %>
 
-<!-- BRIDGET TO COMPLETE -->
-<%= form_for @current_user do |u| %>
-  <%= u.label :email, "Email" %>
-  <%= u.text_field :email %>
-  
-  <%= u.submit method: :update %>
+<%= form_for @profile, url: "/profiles/:id" method: :put do |profile| %>
+  <%= profile.label :fname, "First Name" %>
+  <%= profile.text_field :fname %>
+  <%= profile.label :lname, "Last Name" %>
+  <%= profile.text_field :lname %>
+  <%= profile.label :username, "Username" %>
+  <%= profile.text_field :username %>
+  <%= profile.submit %>
 <% end %>
-
-
-

@@ -27,30 +27,9 @@ Things you may want to cover:
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
 
-["Algeciras", "Tangier", "Gibraltar", "Ceuta", "Málaga", "Al Hoceima", "Melilla", "Nador", "Almería", "Cartagena", "Oran", "Alicante", "Valencia", "Castellón de la Plana", "Calpe", "Mostaganem", "Dénia"
-Sant Carles de la Ràpita
-Tarragona
-Sant Antoni de Portmany
-Ibiza
-Sitges
-Barcelona
-Badalona
-Palma
-Algiers
-Alcúdia
-Cala Millor
-Agde
-Sète
-Ciutadella
-Mahón
-Béjaïa
-Marseille
-Jijel
-Toulon
+mediterraneanPorts = ["Algeciras", "Tangier", "Gibraltar", "Ceuta", "Málaga", "Al Hoceima", "Melilla", "Nador", "Almería", "Cartagena", "Oran", "Alicante", "Valencia", "Castellón de la Plana", "Calpe", "Mostaganem", "Dénia", "Sant Carles de la Ràpita", "Tarragona", "Sant Antoni de Portmany", "Ibiza", "Sitges", "Barcelona", "Badalona", "Palma", "Algiers", "Alcúdia", "Cala", "Millor", "Agde", "Sète", "Ciutadella", "Mahón", "Béjaïa", "Marseille", "Jijel", "Toulon", "Monaco", "Cannes", "Nice", "Palermo", "Trieste", "Benghazi", "Alexandria", "Tel-Aviv"]
+
 Skikda
-Cannes
-Nice
-Monaco
 Annaba
 Sanremo
 Alghero
@@ -76,9 +55,7 @@ Marsala
 Trapani
 Terrasini
 Tripoli
-Palermo
 Piran
-Trieste
 Pula
 Naples
 Rijeka
@@ -112,11 +89,8 @@ Lezhë
 Dhërmi
 Himarë
 Sarandë
-Benghazi
 Preveza
 Piraeus
-Alexandria
-Tel-Aviv
 Ashdod
 Haifa
 
@@ -141,3 +115,5 @@ Haifa
     </div>
   <% end %>
 <% end %>
+
+<%= newPro_path(user_id: user.id), method: :get, remote: true, class: "newPro" %>
