@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   has_one :user_profile
   has_one :profile, dependent: :destroy
   has_many :boats, dependent: :destroy
-  # has_many :boats, through: :user_boats
+  has_many :user_boats
 
 
 

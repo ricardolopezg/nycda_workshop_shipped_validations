@@ -1,6 +1,7 @@
 class Boat < ActiveRecord::Base
   has_many :jobs, dependent: :destroy
-  # has_many :users, through: :user_boats
+  has_many :users
+  has_many :user_boats
   belongs_to :user
 
 
