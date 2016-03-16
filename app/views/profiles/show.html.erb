@@ -3,11 +3,9 @@
 
 <!-- VALIDATION OF UNIQUE BOAT NAME -->
 <% if @new_boat.errors.any? %>
-  <ul>
     <% @new_boat.errors.values.each do |error_message| %>
-      <li style = "list-style: none"><%= error_message * " " %></li> <br>
+      <%= error_message * " " %><br><br>
     <% end %>
-  </ul>
 <% end %>
 
 
@@ -33,7 +31,7 @@
   <%= nb.label :container_capacity, "Container Capacity" %>
   <%= nb.number_field :container_capacity %>
   <%= nb.label :location, "Location" %>
-  <%= nb.text_field :location %>
+  <%= nb.select :location, ["Algeciras", "Tangier", "Gibraltar", "Ceuta", "Málaga", "Al Hoceima", "Melilla", "Nador", "Almería", "Cartagena", "Oran", "Alicante", "Valencia", "Castellón de la Plana", "Calpe", "Mostaganem", "Dénia", "Sant Carles de la Ràpita", "Tarragona", "Sant Antoni de Portmany", "Ibiza", "Sitges", "Barcelona", "Badalona", "Palma", "Algiers", "Alcúdia", "Cala", "Millor", "Agde", "Sète", "Ciutadella", "Mahón", "Béjaïa", "Marseille", "Jijel", "Toulon", "Monaco", "Cannes", "Nice", "Palermo", "Trieste", "Benghazi", "Alexandria", "Tel-Aviv"], prompt: "Select Location" %>
   <%= nb.label :avatar, "Boat Image" %>
   <%= nb.file_field :avatar %>
   <%= nb.submit %>

@@ -18,13 +18,13 @@ module ApplicationHelper
     end    
   end  
 
-  def find_jobs_nav_link
+  def create_and_find_jobs_nav_link
     content_tag :a do
-      link_to "FIND JOBS", find_jobs_path    
+      link_to "CREATE / FIND JOBS", find_jobs_path    
     end    
   end  
 
-  def boats_nav_link
+  def all_boats_nav_link
     content_tag :a do
       link_to "All BOATS", boats_path     
     end    

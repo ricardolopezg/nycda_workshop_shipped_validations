@@ -9,7 +9,7 @@
   <%= b.number_field :container_capacity %>
   
   <%= b.label :location, "Location" %>
-  <%= b.text_field :location %>
+  <%= b.select :location, @cities_array %>
   
   <%= b.label :avatar, "Boat Image" %>
   <%= b.file_field :avatar %>
