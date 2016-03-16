@@ -14,8 +14,8 @@
   <%= h2helper("CREATE A JOB") %>
   <%= nj.text_field :title, placeholder: "Job Title", class: "new_job_form_field" %><br><br>
   <%= nj.text_area :cargo, placeholder: "Cargo Description", size: "24x6", class: "new_job_form_field" %><br><br>
-  <%= nj.text_field :origin, placeholder: "Origin", class: "new_job_form_field" %><br><br>
-  <%= nj.text_field :destination, placeholder: "Destination", class: "new_job_form_field" %><br><br>
+  <%= nj.select :origin, ["Algeciras", "Tangier", "Gibraltar", "Ceuta", "Málaga", "Al Hoceima", "Melilla", "Nador", "Almería", "Cartagena", "Oran", "Alicante", "Valencia", "Castellón de la Plana", "Calpe", "Mostaganem", "Dénia", "Sant Carles de la Ràpita", "Tarragona", "Sant Antoni de Portmany", "Ibiza", "Sitges", "Barcelona", "Badalona", "Palma", "Algiers", "Alcúdia", "Cala", "Millor", "Agde", "Sète", "Ciutadella", "Mahón", "Béjaïa", "Marseille", "Jijel", "Toulon", "Monaco", "Cannes", "Nice", "Palermo", "Trieste", "Benghazi", "Alexandria", "Tel-Aviv"], prompt: "Select Origin", class: "new_job_form_field" %><br><br>
+  <%= nj.select :destination, ["Algeciras", "Tangier", "Gibraltar", "Ceuta", "Málaga", "Al Hoceima", "Melilla", "Nador", "Almería", "Cartagena", "Oran", "Alicante", "Valencia", "Castellón de la Plana", "Calpe", "Mostaganem", "Dénia", "Sant Carles de la Ràpita", "Tarragona", "Sant Antoni de Portmany", "Ibiza", "Sitges", "Barcelona", "Badalona", "Palma", "Algiers", "Alcúdia", "Cala", "Millor", "Agde", "Sète", "Ciutadella", "Mahón", "Béjaïa", "Marseille", "Jijel", "Toulon", "Monaco", "Cannes", "Nice", "Palermo", "Trieste", "Benghazi", "Alexandria", "Tel-Aviv"], prompt: "Select Destination", class: "new_job_form_field" %><br><br>
   <%= nj.number_field :containers_needed, placeholder: "Containers Needed", class: "new_job_form_field" %><br><br>
   <%= nj.number_field :cost, placeholder: "Cost", class: "new_job_form_field" %><br><br>
   <%= nj.date_field :delivery_date, placeholder: "Delivery Date", class: "new_job_form_field" %><br><br>  

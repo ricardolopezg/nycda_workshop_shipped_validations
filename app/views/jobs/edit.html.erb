@@ -12,10 +12,10 @@
   <%= j.text_field :cargo %>
   
   <%= j.label :origin, "Origin" %>
-  <%= j.text_field :origin %>
+  <%= j.select :origin, @cities_array %>
   
   <%= j.label :destination, "Destination" %>
-  <%= j.text_field :destination %>
+  <%= j.select :destination, @cities_array %>
 
   <%= j.label :cost, "Cost" %>
   <%= j.number_field :cost %>  
