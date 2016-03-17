@@ -21,6 +21,7 @@ class JobsController < ApplicationController
   end
 
   def show
+    @job = Job.find(params[:id])
     
   end
   
@@ -30,6 +31,9 @@ class JobsController < ApplicationController
   end
 
   def create
+    @current_profile = Profile.find(current_user.id)
+    @boats = Boat.where(user_id: @current_profile.id)
+    
     @jobs = Job.all
     @new_job = Job.new(job_params)
     
@@ -62,13 +66,7 @@ class JobsController < ApplicationController
     @job = Job.find(params[:id])
     @job.update(job_params)
 
-
-    if @job.save
-      redirect_to profile_path(current_user.id)
-    else
-      redirect_to find_jobs_path
-    end
-
+    redirect_to profile_path(current_user.id)
   end
 
 
