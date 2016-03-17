@@ -6,8 +6,7 @@
   </tr>
   <tr>
 <% @boats.each do |b| %> 
-    <td><%= link_to("View Jobs", boat_path(b.id), method: :get) %><br><br><%= button_tag "Follow", follow_path(user_id: @user.id),
-method: :post, remote: true %></td>
+    <td><%= link_to("View Jobs", boat_path(b.id), method: :get) %></td>
     <td><%= image_tag b.avatar.url(:medium) %></td>
     <th><%= h3helper("Boat:") %></th>
     <td><%= phelper(b.boat_name) %></td>

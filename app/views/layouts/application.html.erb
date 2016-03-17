@@ -11,10 +11,10 @@
 <nav>
   <ul>
   <% if current_user %>
-    <li><%= my_profile_nav_link %></li>
-    <li><%= find_jobs_nav_link %></li>
+    <li><%= edit_profile_nav_link %></li>
+    <li><%= create_and_find_jobs_nav_link %></li>
     <li><%= claimed_jobs_nav_link %></li>
-    <li><%= boats_nav_link %></li>
+    <li><%= all_boats_nav_link %></li>
     <li><%= log_out_nav_link %></li>
   <% else %>
     <li><%= sign_up_nav_link %></li>

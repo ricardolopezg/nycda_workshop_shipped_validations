@@ -8,7 +8,6 @@ class ProfilesController < ApplicationController
     # @profile = Profile.current_user
     @current_profile = Profile.find(current_user.id)
     @current_user = User.find(current_user.id)
-    @full_name = (@current_profile.fname + " " + @current_profile.lname)
 
     @new_boat = Boat.new
   end
@@ -31,7 +30,9 @@ class ProfilesController < ApplicationController
   end
   
   def update
-  @profile = Profile.update(profile_params)
+    @profile = Profile.find(params[:id])
+    @profile.update(profile_params)
+    
     if @profile.save
       redirect_to profile_path(:id)
     else

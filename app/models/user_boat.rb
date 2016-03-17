@@ -1,5 +1,4 @@
-class Follower < ActiveRecord::Base
+class UserBoat < ActiveRecord::Base
   belongs_to :user
   belongs_to :boat
-
 end

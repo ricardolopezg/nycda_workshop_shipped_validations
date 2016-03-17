@@ -6,19 +6,25 @@ module ApplicationHelper
     end    
   end
 
+  def edit_profile_nav_link
+    content_tag :a do
+      link_to "EDIT PROFILE", edit_profile_path(current_user.id)      
+    end    
+  end
+
   def claimed_jobs_nav_link
     content_tag :a do
       link_to "CLAIMED JOBS", claimed_jobs_path     
     end    
   end  
 
-  def find_jobs_nav_link
+  def create_and_find_jobs_nav_link
     content_tag :a do
-      link_to "FIND JOBS", find_jobs_path    
+      link_to "CREATE / FIND JOBS", find_jobs_path    
     end    
   end  
 
-  def boats_nav_link
+  def all_boats_nav_link
     content_tag :a do
       link_to "All BOATS", boats_path     
     end    

@@ -7,6 +7,9 @@ class ApplicationController < ActionController::Base
     "http://www.hamsterdance.com"
   end
 
+
+
+
   # user = User.id
   # profile = Profile.find
 end

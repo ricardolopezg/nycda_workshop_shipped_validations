@@ -1,6 +1,6 @@
-class CreateFollowers < ActiveRecord::Migration
+class CreateUserBoats < ActiveRecord::Migration
   def change
-    create_table :followers do |t|
+    create_table :user_boats do |t|
       t.integer :user_id
       t.integer :boat_id
 

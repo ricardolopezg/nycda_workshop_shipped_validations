@@ -21,6 +21,7 @@ class JobsController < ApplicationController
   end
 
   def show
+    @job = Job.find(params[:id])
     
   end
   
@@ -30,12 +31,14 @@ class JobsController < ApplicationController
   end
 
   def create
+    @current_profile = Profile.find(current_user.id)
+    @boats = Boat.where(user_id: @current_profile.id)
+    
     @jobs = Job.all
     @new_job = Job.new(job_params)
     
     if @new_job.save
       redirect_to find_jobs_path
-      # render :find_jobs
     else
       render :find_jobs
     end
@@ -43,6 +46,8 @@ class JobsController < ApplicationController
   
   def edit
     @job = Job.find(params[:id])
+
+    @cities_array = ["Algeciras", "Tangier", "Gibraltar", "Ceuta", "Málaga", "Al Hoceima", "Melilla", "Nador", "Almería", "Cartagena", "Oran", "Alicante", "Valencia", "Castellón de la Plana", "Calpe", "Mostaganem", "Dénia", "Sant Carles de la Ràpita", "Tarragona", "Sant Antoni de Portmany", "Ibiza", "Sitges", "Barcelona", "Badalona", "Palma", "Algiers", "Alcúdia", "Cala", "Millor", "Agde", "Sète", "Ciutadella", "Mahón", "Béjaïa", "Marseille", "Jijel", "Toulon", "Monaco", "Cannes", "Nice", "Palermo", "Trieste", "Benghazi", "Alexandria", "Tel-Aviv"]
   end
   
   def update
@@ -61,13 +66,7 @@ class JobsController < ApplicationController
     @job = Job.find(params[:id])
     @job.update(job_params)
 
-
-    if @job.save
-      redirect_to profile_path(current_user.id)
-    else
-      redirect_to find_jobs_path
-    end
-
+    redirect_to profile_path(current_user.id)
   end
 
 
