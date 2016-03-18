@@ -1,3 +1,4 @@
+
 Rails.application.routes.draw do
   devise_for :users
 
@@ -11,7 +12,20 @@ Rails.application.routes.draw do
 
   post "/profiles/new" => "profiles#new"
 
-  
+  resources :users do
+    member do
+      get :following
+    end
+  end
+
+  resources :boats do
+    member do
+      get :followers
+    end
+  end
+
+  resources :relationships,       only: [:create, :destroy]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

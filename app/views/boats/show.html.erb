@@ -1,11 +1,22 @@
 <%= h1helper("#{@boat.boat_name}") %>
 
+<div id="followBoat">
+   <%= form_for(current_user.active_relationships.build, remote: true) do |f| %>
+    <%= hidden_field_tag :followed_id, @boat.id %>
+    <%= f.submit "Track" %>
+  <% end %>
+     <!-- <#%=link_to "Track", relationships_path(followed_id: @current_user.id), method: :post, remote: true %> -->
+</div>
+
+<div class="track">
+  <p id="trackers"><%= @boat.followers.count %> users tracking this ship </p>
+</div>
+
 <div class = "boat_profile">
   <%= image_tag @boat.avatar.url(:medium) %>
   <%= phelper("Container Capacity: #{@boat.container_capacity}") %>
   <%= phelper("Location: #{@boat.location}") %>
 </div>
-
 
 <% @boat_jobs.each do |bj| %>
 <table class = "table_one_boat_job_title">  
