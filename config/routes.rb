@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   resources :boats
   resources :jobs
 
+  post 'responder' => "relationships#responder"
+
   get "/claimed_jobs" => "jobs#claimed_jobs"
   get "/find_jobs" => "jobs#find_jobs"
   put "/assign_boat_name/:id" => "jobs#assign_boat_name"

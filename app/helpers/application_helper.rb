@@ -26,7 +26,7 @@ module ApplicationHelper
 
   def all_boats_nav_link
     content_tag :a do
-      link_to "All BOATS", boats_path     
+      link_to "ALL BOATS", boats_path     
     end    
   end
 

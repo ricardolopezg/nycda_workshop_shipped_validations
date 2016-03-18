@@ -15,7 +15,7 @@
   <%= @current_profile.username %><br>
   <%= @current_profile.fname + " " + @current_profile.lname %><br>
   <%= current_user.email %><br>
-  <p>Currently tracking <#%= @boats.following.count %> boats. </p>
+  <p>Currently tracking <span id="tracking"><%= @current_user.following.count %></span> ships. </p>
   <%= link_to("Edit Profile", edit_profile_path(current_user.id), method: :get) %>
   <%= link_to("Delete Profile", 
     profile_path(current_user.id), 

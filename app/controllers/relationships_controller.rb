@@ -1,9 +1,16 @@
 class RelationshipsController < ApplicationController
 
   def create
-    @boat = Boat.find(params[:id])
-    Relationship.create!(params[follower_id: :user_id][followed_id: :boat_id])
-    redirect_to boat_path(@boat)
+    @boat = Boat.find(current_boat.id])
+    @user = User.find(current_user.id)
+    @follow = Relationship.create(relationship_params)
+    @follow.follower_id = current_user.id
+    @follow.followed_id = current_boat.id
+  end
+
+  def responder
+    create.js
+    render boat_path(:id)
   end
 
   def destroy
