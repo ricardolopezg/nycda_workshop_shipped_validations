@@ -8,6 +8,7 @@ class ProfilesController < ApplicationController
     # @profile = Profile.current_user
     @current_profile = Profile.find(current_user.id)
     @current_user = User.find(current_user.id)
+    @boats = Boat.all
 
     @new_boat = Boat.new
   end

@@ -7,7 +7,10 @@ class User < ActiveRecord::Base
   has_one :user_profile
   has_one :profile, dependent: :destroy
   has_many :boats, dependent: :destroy
-  has_many :user_boats
+  has_many :active_relationships, class_name: "Relationship",
+                                  foreign_key: "follower_id",
+                                  dependent: :destroy
+  has_many :following, through: :active_relationships, source: :followed
 
 
 
@@ -24,3 +27,5 @@ class User < ActiveRecord::Base
   end
 
 end
+
+# https://www.railstutorial.org/book/following_users
