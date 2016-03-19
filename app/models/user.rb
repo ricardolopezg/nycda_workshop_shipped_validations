@@ -26,6 +26,14 @@ class User < ActiveRecord::Base
     true
   end
 
+  def follow(boat)
+    active_relationships.create(followed_id: boat.id)
+  end
+
+  def unfollow(boat)
+    active_relationships.find_by(followed_id: boat.id).destroy
+  end
+  
 end
 
 # https://www.railstutorial.org/book/following_users

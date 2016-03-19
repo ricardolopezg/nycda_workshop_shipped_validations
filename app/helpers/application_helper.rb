@@ -26,7 +26,7 @@ module ApplicationHelper
 
   def all_boats_nav_link
     content_tag :a do
-      link_to "ALL BOATS", boats_path     
+      link_to "ALL SHIPS", boats_path     
     end    
   end
 
@@ -64,10 +64,6 @@ module ApplicationHelper
   def phelper(body)
     content_tag :p, body 
   end
- 
-
-
-
 
 
 end

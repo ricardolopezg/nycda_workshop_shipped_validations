@@ -1,13 +1,15 @@
 <%= h1helper("#{@boat.boat_name}") %>
 
 <div id="followBoat">
-   <%= button_to "Track This Ship", responder_path(followed_id: @boat.id), method: :post, remote: true, class: "responder" %>
-    <!-- do |f| %>
-    <#%= hidden_field_tag :followed_id, @boat.id %>
-    <#%= f.submit "Track" %>
-  <#% end %> -->
-  <!-- (current_user.active_relationships.build) -->
-     <!-- <#%=link_to "Track", relationships_path(followed_id: @current_user.id), method: :post, remote: true %> -->
+  <!-- <#% unless @current_user.id = @boat.user_id %> -->
+    <!-- <#% if @relationship.follower_id != @current_user.id %> -->
+      <div id="follow_form">
+        <%= render "follow" %>
+    <!-- <#% else %> -->
+        <!-- <#%= render "unfollow" %> -->
+      </div>
+    <!-- <#% end %> -->
+  <!-- <#% end %> -->
 </div>
 
 <div class="track">
