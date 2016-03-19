@@ -4,16 +4,11 @@ class BoatsController < ApplicationController
     @boats = Boat.all
   end
 
-  # def follow
-  #   @boat = Boat.find(params[:id])
-  #   @current_user = User.find(current_user.id)
-  # end
-
   def show
     @boat = Boat.find(params[:id])
     @boat_jobs = @boat.jobs
     @current_user = User.find(current_user.id)
-    @new_relationship = Relationship.new(params[:relationship])
+    # @relationship = Relationship.new(params[:relationship])
   end
   
   def new
@@ -60,6 +55,10 @@ class BoatsController < ApplicationController
   private
   def boat_params
     params.require(:boat).permit(:user_id, :boat_name, :container_capacity, :location, :avatar)
+  end
+
+  def relationship_params
+    params.require(:relationship).permit(:follower_id, :followed_id)
   end
 
 

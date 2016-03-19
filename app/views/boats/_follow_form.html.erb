@@ -1,0 +1,10 @@
+   <!-- <#%= button_to "Track This Ship", relationships_path, method: :post, remote: true, class: "responder" %> -->
+  <% unless current_user.id = @current_user.id %>
+    <div id="follow_form">
+      <% if current_user.following?(@user) %>
+        <%= render "unfollow" %>
+      <% else %>
+        <%= render "follow" %>
+      <% end %>
+    </div>
+  <% end %>

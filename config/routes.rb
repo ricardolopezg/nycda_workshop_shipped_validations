@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :boats
   resources :jobs
 
-  post 'responder' => "relationships#responder"
+  post 'responder' => "relationships#create"
 
   get "/claimed_jobs" => "jobs#claimed_jobs"
   get "/find_jobs" => "jobs#find_jobs"
